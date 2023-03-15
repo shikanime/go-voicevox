@@ -1,0 +1,4 @@
+disallowAdditionalPropertiesIfNotPresent: true
+generateInterfaces: true
+structPrefix: true
+enumClassPrefix: true

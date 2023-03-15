@@ -58,7 +58,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -130,7 +130,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -196,7 +196,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -270,7 +270,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -340,7 +340,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -408,7 +408,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -478,7 +478,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -542,7 +542,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -603,7 +603,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -667,7 +667,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -735,7 +735,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -794,7 +794,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -855,7 +855,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -916,7 +916,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -977,7 +977,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1043,7 +1043,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1111,7 +1111,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1179,7 +1179,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1240,7 +1240,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1306,7 +1306,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1374,7 +1374,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1442,7 +1442,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1512,7 +1512,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1578,7 +1578,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1648,7 +1648,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1724,7 +1724,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1783,7 +1783,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1851,7 +1851,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1917,7 +1917,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -1981,7 +1981,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -2047,7 +2047,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -2119,7 +2119,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -2191,7 +2191,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {
@@ -2255,7 +2255,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github/shikanime/go-voicevox"
+    openapiclient "github/infinity-blackhole/go-voicevox"
 )
 
 func main() {

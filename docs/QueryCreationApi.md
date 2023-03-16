@@ -1,21 +1,17 @@
 # \QueryCreationApi
 
-All URIs are relative to *http://localhost:50021*
+All URIs are relative to *<http://localhost:50021>*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AudioQueryAudioQueryPost**](QueryCreationApi.md#AudioQueryAudioQueryPost) | **Post** /audio_query | 音声合成用のクエリを作成する
 [**AudioQueryFromPresetAudioQueryFromPresetPost**](QueryCreationApi.md#AudioQueryFromPresetAudioQueryFromPresetPost) | **Post** /audio_query_from_preset | 音声合成用のクエリをプリセットを用いて作成する
 
-
-
 ## AudioQueryAudioQueryPost
 
 > AudioQuery AudioQueryAudioQueryPost(ctx).Text(text).Speaker(speaker).CoreVersion(coreVersion).Execute()
 
 音声合成用のクエリを作成する
-
-
 
 ### Example
 
@@ -48,18 +44,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiAudioQueryAudioQueryPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **text** | **string** |  | 
- **speaker** | **int32** |  | 
- **coreVersion** | **string** |  | 
+ **text** | **string** |  |
+ **speaker** | **int32** |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -78,14 +71,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## AudioQueryFromPresetAudioQueryFromPresetPost
 
 > AudioQuery AudioQueryFromPresetAudioQueryFromPresetPost(ctx).Text(text).PresetId(presetId).CoreVersion(coreVersion).Execute()
 
 音声合成用のクエリをプリセットを用いて作成する
-
-
 
 ### Example
 
@@ -118,18 +108,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiAudioQueryFromPresetAudioQueryFromPresetPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **text** | **string** |  | 
- **presetId** | **int32** |  | 
- **coreVersion** | **string** |  | 
+ **text** | **string** |  |
+ **presetId** | **int32** |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -147,4 +134,3 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-

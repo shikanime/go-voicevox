@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int32** |  | 
-**Icon** | **string** |  | 
-**Portrait** | Pointer to **string** |  | [optional] 
-**VoiceSamples** | **[]string** |  | 
+**Id** | **int32** |  |
+**Icon** | **string** |  |
+**Portrait** | Pointer to **string** |  | [optional]
+**VoiceSamples** | **[]string** |  |
 
 ## Methods
 
@@ -47,7 +47,6 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
-
 ### GetIcon
 
 `func (o *StyleInfo) GetIcon() string`
@@ -66,7 +65,6 @@ and a boolean to check if the value has been set.
 `func (o *StyleInfo) SetIcon(v string)`
 
 SetIcon sets Icon field to given value.
-
 
 ### GetPortrait
 
@@ -112,8 +110,4 @@ and a boolean to check if the value has been set.
 
 SetVoiceSamples sets VoiceSamples field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

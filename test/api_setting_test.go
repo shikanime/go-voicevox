@@ -13,8 +13,8 @@ import (
 	"context"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
 	openapiclient "github/infinity-blackhole/go-voicevox"
+	"testing"
 )
 
 func Test_voicevox_SettingApiService(t *testing.T) {
@@ -24,7 +24,7 @@ func Test_voicevox_SettingApiService(t *testing.T) {
 
 	t.Run("Test SettingApiService SettingGetSettingGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SettingApi.SettingGetSettingGet(context.Background()).Execute()
 
@@ -36,7 +36,7 @@ func Test_voicevox_SettingApiService(t *testing.T) {
 
 	t.Run("Test SettingApiService SettingPostSettingPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SettingApi.SettingPostSettingPost(context.Background()).Execute()
 

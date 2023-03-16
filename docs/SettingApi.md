@@ -1,13 +1,11 @@
 # \SettingApi
 
-All URIs are relative to *http://localhost:50021*
+All URIs are relative to *<http://localhost:50021>*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**SettingGetSettingGet**](SettingApi.md#SettingGetSettingGet) | **Get** /setting | Setting Get
 [**SettingPostSettingPost**](SettingApi.md#SettingPostSettingPost) | **Post** /setting | Setting Post
-
-
 
 ## SettingGetSettingGet
 
@@ -49,7 +47,6 @@ This endpoint does not need any parameter.
 
 Other parameters are passed through a pointer to a apiSettingGetSettingGetRequest struct via the builder pattern
 
-
 ### Return type
 
 **string**
@@ -66,7 +63,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## SettingPostSettingPost
 
@@ -104,17 +100,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSettingPostSettingPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **corsPolicyMode** | **string** |  | 
- **allowOrigin** | **string** |  | 
+ **corsPolicyMode** | **string** |  |
+ **allowOrigin** | **string** |  |
 
 ### Return type
 
@@ -132,4 +125,3 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-

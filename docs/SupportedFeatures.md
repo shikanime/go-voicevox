@@ -4,15 +4,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AdjustMoraPitch** | **bool** |  | 
-**AdjustPhonemeLength** | **bool** |  | 
-**AdjustSpeedScale** | **bool** |  | 
-**AdjustPitchScale** | **bool** |  | 
-**AdjustIntonationScale** | **bool** |  | 
-**AdjustVolumeScale** | **bool** |  | 
-**InterrogativeUpspeak** | **bool** |  | 
-**SynthesisMorphing** | **bool** |  | 
-**ManageLibrary** | **bool** |  | 
+**AdjustMoraPitch** | **bool** |  |
+**AdjustPhonemeLength** | **bool** |  |
+**AdjustSpeedScale** | **bool** |  |
+**AdjustPitchScale** | **bool** |  |
+**AdjustIntonationScale** | **bool** |  |
+**AdjustVolumeScale** | **bool** |  |
+**InterrogativeUpspeak** | **bool** |  |
+**SynthesisMorphing** | **bool** |  |
+**ManageLibrary** | **bool** |  |
 
 ## Methods
 
@@ -52,7 +52,6 @@ and a boolean to check if the value has been set.
 
 SetAdjustMoraPitch sets AdjustMoraPitch field to given value.
 
-
 ### GetAdjustPhonemeLength
 
 `func (o *SupportedFeatures) GetAdjustPhonemeLength() bool`
@@ -71,7 +70,6 @@ and a boolean to check if the value has been set.
 `func (o *SupportedFeatures) SetAdjustPhonemeLength(v bool)`
 
 SetAdjustPhonemeLength sets AdjustPhonemeLength field to given value.
-
 
 ### GetAdjustSpeedScale
 
@@ -92,7 +90,6 @@ and a boolean to check if the value has been set.
 
 SetAdjustSpeedScale sets AdjustSpeedScale field to given value.
 
-
 ### GetAdjustPitchScale
 
 `func (o *SupportedFeatures) GetAdjustPitchScale() bool`
@@ -111,7 +108,6 @@ and a boolean to check if the value has been set.
 `func (o *SupportedFeatures) SetAdjustPitchScale(v bool)`
 
 SetAdjustPitchScale sets AdjustPitchScale field to given value.
-
 
 ### GetAdjustIntonationScale
 
@@ -132,7 +128,6 @@ and a boolean to check if the value has been set.
 
 SetAdjustIntonationScale sets AdjustIntonationScale field to given value.
 
-
 ### GetAdjustVolumeScale
 
 `func (o *SupportedFeatures) GetAdjustVolumeScale() bool`
@@ -151,7 +146,6 @@ and a boolean to check if the value has been set.
 `func (o *SupportedFeatures) SetAdjustVolumeScale(v bool)`
 
 SetAdjustVolumeScale sets AdjustVolumeScale field to given value.
-
 
 ### GetInterrogativeUpspeak
 
@@ -172,7 +166,6 @@ and a boolean to check if the value has been set.
 
 SetInterrogativeUpspeak sets InterrogativeUpspeak field to given value.
 
-
 ### GetSynthesisMorphing
 
 `func (o *SupportedFeatures) GetSynthesisMorphing() bool`
@@ -191,7 +184,6 @@ and a boolean to check if the value has been set.
 `func (o *SupportedFeatures) SetSynthesisMorphing(v bool)`
 
 SetSynthesisMorphing sets SynthesisMorphing field to given value.
-
 
 ### GetManageLibrary
 
@@ -212,8 +204,4 @@ and a boolean to check if the value has been set.
 
 SetManageLibrary sets ManageLibrary field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

@@ -38,6 +38,12 @@
                 statix.enable = true;
                 deadnix.enable = true;
               };
+              pre-commit.settings.markdownlint.config = {
+                MD013.line_length = 500;
+                MD024.allow_different_nesting = true;
+                MD036 = false;
+                MD042 = false;
+              };
               packages = [
                 pkgs.nixpkgs-fmt
               ];
@@ -46,7 +52,6 @@
               pre-commit.hooks.gofmt.enable = true;
               packages = [
                 pkgs.go
-                pkgs.openapi-generator-cli
               ];
             }
           ];

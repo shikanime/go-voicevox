@@ -22,23 +22,23 @@ import (
 type OtherApi interface {
 
 	/*
-		AddPresetAddPresetPost Add Preset
+			AddPresetAddPresetPost Add Preset
 
-		新しいプリセットを追加します
+			新しいプリセットを追加します
 
-	Parameters
-	-------
-	preset: Preset
-	    新しいプリセット。
-	    プリセットIDが既存のものと重複している場合は、新規のプリセットIDが採番されます。
+		Parameters
+		-------
+		preset: Preset
+		    新しいプリセット。
+		    プリセットIDが既存のものと重複している場合は、新規のプリセットIDが採番されます。
 
-	Returns
-	-------
-	id: int
-	    追加したプリセットのプリセットID
+		Returns
+		-------
+		id: int
+		    追加したプリセットのプリセットID
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return OtherApiAddPresetAddPresetPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return OtherApiAddPresetAddPresetPostRequest
 	*/
 	AddPresetAddPresetPost(ctx context.Context) OtherApiAddPresetAddPresetPostRequest
 
@@ -73,17 +73,17 @@ type OtherApi interface {
 	CoreVersionsCoreVersionsGetExecute(r OtherApiCoreVersionsCoreVersionsGetRequest) ([]string, *http.Response, error)
 
 	/*
-		DeletePresetDeletePresetPost Delete Preset
+			DeletePresetDeletePresetPost Delete Preset
 
-		既存のプリセットを削除します
+			既存のプリセットを削除します
 
-	Parameters
-	-------
-	id: int
-	    削除するプリセットのプリセットID
+		Parameters
+		-------
+		id: int
+		    削除するプリセットのプリセットID
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return OtherApiDeletePresetDeletePresetPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return OtherApiDeletePresetDeletePresetPostRequest
 	*/
 	DeletePresetDeletePresetPost(ctx context.Context) OtherApiDeletePresetDeletePresetPostRequest
 
@@ -103,17 +103,17 @@ type OtherApi interface {
 	EngineManifestEngineManifestGetExecute(r OtherApiEngineManifestEngineManifestGetRequest) (*EngineManifest, *http.Response, error)
 
 	/*
-		GetPresetsPresetsGet Get Presets
+			GetPresetsPresetsGet Get Presets
 
-		エンジンが保持しているプリセットの設定を返します
+			エンジンが保持しているプリセットの設定を返します
 
-	Returns
-	-------
-	presets: List[Preset]
-	    プリセットのリスト
+		Returns
+		-------
+		presets: List[Preset]
+		    プリセットのリスト
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return OtherApiGetPresetsPresetsGetRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return OtherApiGetPresetsPresetsGetRequest
 	*/
 	GetPresetsPresetsGet(ctx context.Context) OtherApiGetPresetsPresetsGetRequest
 
@@ -122,13 +122,13 @@ type OtherApi interface {
 	GetPresetsPresetsGetExecute(r OtherApiGetPresetsPresetsGetRequest) ([]Preset, *http.Response, error)
 
 	/*
-		InitializeSpeakerInitializeSpeakerPost Initialize Speaker
+			InitializeSpeakerInitializeSpeakerPost Initialize Speaker
 
-		指定されたspeaker_idの話者を初期化します。
-	実行しなくても他のAPIは使用できますが、初回実行時に時間がかかることがあります。
+			指定されたspeaker_idの話者を初期化します。
+		実行しなくても他のAPIは使用できますが、初回実行時に時間がかかることがあります。
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return OtherApiInitializeSpeakerInitializeSpeakerPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return OtherApiInitializeSpeakerInitializeSpeakerPostRequest
 	*/
 	InitializeSpeakerInitializeSpeakerPost(ctx context.Context) OtherApiInitializeSpeakerInitializeSpeakerPostRequest
 
@@ -150,17 +150,17 @@ type OtherApi interface {
 	IsInitializedSpeakerIsInitializedSpeakerGetExecute(r OtherApiIsInitializedSpeakerIsInitializedSpeakerGetRequest) (bool, *http.Response, error)
 
 	/*
-		SpeakerInfoSpeakerInfoGet Speaker Info
+			SpeakerInfoSpeakerInfoGet Speaker Info
 
-		指定されたspeaker_uuidに関する情報をjson形式で返します。
-	画像や音声はbase64エンコードされたものが返されます。
+			指定されたspeaker_uuidに関する情報をjson形式で返します。
+		画像や音声はbase64エンコードされたものが返されます。
 
-	Returns
-	-------
-	ret_data: SpeakerInfo
+		Returns
+		-------
+		ret_data: SpeakerInfo
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return OtherApiSpeakerInfoSpeakerInfoGetRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return OtherApiSpeakerInfoSpeakerInfoGetRequest
 	*/
 	SpeakerInfoSpeakerInfoGet(ctx context.Context) OtherApiSpeakerInfoSpeakerInfoGetRequest
 
@@ -193,23 +193,23 @@ type OtherApi interface {
 	SupportedDevicesSupportedDevicesGetExecute(r OtherApiSupportedDevicesSupportedDevicesGetRequest) (*SupportedDevicesInfo, *http.Response, error)
 
 	/*
-		UpdatePresetUpdatePresetPost Update Preset
+			UpdatePresetUpdatePresetPost Update Preset
 
-		既存のプリセットを更新します
+			既存のプリセットを更新します
 
-	Parameters
-	-------
-	preset: Preset
-	    更新するプリセット。
-	    プリセットIDが更新対象と一致している必要があります。
+		Parameters
+		-------
+		preset: Preset
+		    更新するプリセット。
+		    プリセットIDが更新対象と一致している必要があります。
 
-	Returns
-	-------
-	id: int
-	    更新したプリセットのプリセットID
+		Returns
+		-------
+		id: int
+		    更新したプリセットのプリセットID
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return OtherApiUpdatePresetUpdatePresetPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return OtherApiUpdatePresetUpdatePresetPostRequest
 	*/
 	UpdatePresetUpdatePresetPost(ctx context.Context) OtherApiUpdatePresetUpdatePresetPostRequest
 

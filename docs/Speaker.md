@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**SupportedFeatures** | Pointer to [**SpeakerSupportedFeatures**](SpeakerSupportedFeatures.md) |  | [optional] 
-**Name** | **string** |  | 
-**SpeakerUuid** | **string** |  | 
-**Styles** | [**[]SpeakerStyle**](SpeakerStyle.md) |  | 
+**SupportedFeatures** | Pointer to [**SpeakerSupportedFeatures**](SpeakerSupportedFeatures.md) |  | [optional]
+**Name** | **string** |  |
+**SpeakerUuid** | **string** |  |
+**Styles** | [**[]SpeakerStyle**](SpeakerStyle.md) |  |
 **Version** | Pointer to **string** |  | [optional] [default to "スピーカーのバージョン"]
 
 ## Methods
@@ -73,7 +73,6 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-
 ### GetSpeakerUuid
 
 `func (o *Speaker) GetSpeakerUuid() string`
@@ -93,7 +92,6 @@ and a boolean to check if the value has been set.
 
 SetSpeakerUuid sets SpeakerUuid field to given value.
 
-
 ### GetStyles
 
 `func (o *Speaker) GetStyles() []SpeakerStyle`
@@ -112,7 +110,6 @@ and a boolean to check if the value has been set.
 `func (o *Speaker) SetStyles(v []SpeakerStyle)`
 
 SetStyles sets Styles field to given value.
-
 
 ### GetVersion
 
@@ -139,7 +136,4 @@ SetVersion sets Version field to given value.
 
 HasVersion returns a boolean if a field has been set.
 
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

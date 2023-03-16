@@ -13,8 +13,8 @@ import (
 	"context"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
 	openapiclient "github/infinity-blackhole/go-voicevox"
+	"testing"
 )
 
 func Test_voicevox_AudioLibraryManagementApiService(t *testing.T) {
@@ -24,7 +24,7 @@ func Test_voicevox_AudioLibraryManagementApiService(t *testing.T) {
 
 	t.Run("Test AudioLibraryManagementApiService DownloadableLibrariesDownloadableLibrariesGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AudioLibraryManagementApi.DownloadableLibrariesDownloadableLibrariesGet(context.Background()).Execute()
 
@@ -36,7 +36,7 @@ func Test_voicevox_AudioLibraryManagementApiService(t *testing.T) {
 
 	t.Run("Test AudioLibraryManagementApiService InstallLibraryInstallLibraryLibraryUuidPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var libraryUuid string
 
@@ -49,7 +49,7 @@ func Test_voicevox_AudioLibraryManagementApiService(t *testing.T) {
 
 	t.Run("Test AudioLibraryManagementApiService InstalledLibrariesInstalledLibrariesGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.AudioLibraryManagementApi.InstalledLibrariesInstalledLibrariesGet(context.Background()).Execute()
 

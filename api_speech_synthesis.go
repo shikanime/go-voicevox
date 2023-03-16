@@ -34,15 +34,15 @@ type SpeechSynthesisApi interface {
 	CancellableSynthesisCancellableSynthesisPostExecute(r SpeechSynthesisApiCancellableSynthesisCancellableSynthesisPostRequest) (*os.File, *http.Response, error)
 
 	/*
-		MorphableTargetsMorphableTargetsPost 指定した話者に対してエンジン内の話者がモーフィングが可能か判定する
+			MorphableTargetsMorphableTargetsPost 指定した話者に対してエンジン内の話者がモーフィングが可能か判定する
 
-		指定されたベース話者に対してエンジン内の各話者がモーフィング機能を利用可能か返します。
-	モーフィングの許可/禁止は`/speakers`の`speaker.supported_features.synthesis_morphing`に記載されています。
-	プロパティが存在しない場合は、モーフィングが許可されているとみなします。
-	返り値の話者はstring型なので注意。
+			指定されたベース話者に対してエンジン内の各話者がモーフィング機能を利用可能か返します。
+		モーフィングの許可/禁止は`/speakers`の`speaker.supported_features.synthesis_morphing`に記載されています。
+		プロパティが存在しない場合は、モーフィングが許可されているとみなします。
+		返り値の話者はstring型なので注意。
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return SpeechSynthesisApiMorphableTargetsMorphableTargetsPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return SpeechSynthesisApiMorphableTargetsMorphableTargetsPostRequest
 	*/
 	MorphableTargetsMorphableTargetsPost(ctx context.Context) SpeechSynthesisApiMorphableTargetsMorphableTargetsPostRequest
 
@@ -63,13 +63,13 @@ type SpeechSynthesisApi interface {
 	MultiSynthesisMultiSynthesisPostExecute(r SpeechSynthesisApiMultiSynthesisMultiSynthesisPostRequest) (*os.File, *http.Response, error)
 
 	/*
-		SynthesisMorphingSynthesisMorphingPost 2人の話者でモーフィングした音声を合成する
+			SynthesisMorphingSynthesisMorphingPost 2人の話者でモーフィングした音声を合成する
 
-		指定された2人の話者で音声を合成、指定した割合でモーフィングした音声を得ます。
-	モーフィングの割合は`morph_rate`で指定でき、0.0でベースの話者、1.0でターゲットの話者に近づきます。
+			指定された2人の話者で音声を合成、指定した割合でモーフィングした音声を得ます。
+		モーフィングの割合は`morph_rate`で指定でき、0.0でベースの話者、1.0でターゲットの話者に近づきます。
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return SpeechSynthesisApiSynthesisMorphingSynthesisMorphingPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return SpeechSynthesisApiSynthesisMorphingSynthesisMorphingPostRequest
 	*/
 	SynthesisMorphingSynthesisMorphingPost(ctx context.Context) SpeechSynthesisApiSynthesisMorphingSynthesisMorphingPostRequest
 

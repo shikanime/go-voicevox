@@ -13,8 +13,8 @@ import (
 	"context"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
 	openapiclient "github/infinity-blackhole/go-voicevox"
+	"testing"
 )
 
 func Test_voicevox_SpeechSynthesisApiService(t *testing.T) {
@@ -24,7 +24,7 @@ func Test_voicevox_SpeechSynthesisApiService(t *testing.T) {
 
 	t.Run("Test SpeechSynthesisApiService CancellableSynthesisCancellableSynthesisPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SpeechSynthesisApi.CancellableSynthesisCancellableSynthesisPost(context.Background()).Execute()
 
@@ -36,7 +36,7 @@ func Test_voicevox_SpeechSynthesisApiService(t *testing.T) {
 
 	t.Run("Test SpeechSynthesisApiService MorphableTargetsMorphableTargetsPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SpeechSynthesisApi.MorphableTargetsMorphableTargetsPost(context.Background()).Execute()
 
@@ -48,7 +48,7 @@ func Test_voicevox_SpeechSynthesisApiService(t *testing.T) {
 
 	t.Run("Test SpeechSynthesisApiService MultiSynthesisMultiSynthesisPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SpeechSynthesisApi.MultiSynthesisMultiSynthesisPost(context.Background()).Execute()
 
@@ -60,7 +60,7 @@ func Test_voicevox_SpeechSynthesisApiService(t *testing.T) {
 
 	t.Run("Test SpeechSynthesisApiService SynthesisMorphingSynthesisMorphingPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SpeechSynthesisApi.SynthesisMorphingSynthesisMorphingPost(context.Background()).Execute()
 
@@ -72,7 +72,7 @@ func Test_voicevox_SpeechSynthesisApiService(t *testing.T) {
 
 	t.Run("Test SpeechSynthesisApiService SynthesisSynthesisPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SpeechSynthesisApi.SynthesisSynthesisPost(context.Background()).Execute()
 

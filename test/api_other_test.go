@@ -13,8 +13,8 @@ import (
 	"context"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
 	openapiclient "github/infinity-blackhole/go-voicevox"
+	"testing"
 )
 
 func Test_voicevox_OtherApiService(t *testing.T) {
@@ -24,7 +24,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService AddPresetAddPresetPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.AddPresetAddPresetPost(context.Background()).Execute()
 
@@ -36,7 +36,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService ConnectWavesConnectWavesPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.ConnectWavesConnectWavesPost(context.Background()).Execute()
 
@@ -48,7 +48,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService CoreVersionsCoreVersionsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.CoreVersionsCoreVersionsGet(context.Background()).Execute()
 
@@ -60,7 +60,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService DeletePresetDeletePresetPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.OtherApi.DeletePresetDeletePresetPost(context.Background()).Execute()
 
@@ -71,7 +71,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService EngineManifestEngineManifestGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.EngineManifestEngineManifestGet(context.Background()).Execute()
 
@@ -83,7 +83,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService GetPresetsPresetsGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.GetPresetsPresetsGet(context.Background()).Execute()
 
@@ -95,7 +95,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService InitializeSpeakerInitializeSpeakerPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		httpRes, err := apiClient.OtherApi.InitializeSpeakerInitializeSpeakerPost(context.Background()).Execute()
 
@@ -106,7 +106,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService IsInitializedSpeakerIsInitializedSpeakerGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.IsInitializedSpeakerIsInitializedSpeakerGet(context.Background()).Execute()
 
@@ -118,7 +118,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService SpeakerInfoSpeakerInfoGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.SpeakerInfoSpeakerInfoGet(context.Background()).Execute()
 
@@ -130,7 +130,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService SpeakersSpeakersGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.SpeakersSpeakersGet(context.Background()).Execute()
 
@@ -142,7 +142,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService SupportedDevicesSupportedDevicesGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.SupportedDevicesSupportedDevicesGet(context.Background()).Execute()
 
@@ -154,7 +154,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService UpdatePresetUpdatePresetPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.UpdatePresetUpdatePresetPost(context.Background()).Execute()
 
@@ -166,7 +166,7 @@ func Test_voicevox_OtherApiService(t *testing.T) {
 
 	t.Run("Test OtherApiService VersionVersionGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.OtherApi.VersionVersionGet(context.Background()).Execute()
 

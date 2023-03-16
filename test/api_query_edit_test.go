@@ -13,8 +13,8 @@ import (
 	"context"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
 	openapiclient "github/infinity-blackhole/go-voicevox"
+	"testing"
 )
 
 func Test_voicevox_QueryEditApiService(t *testing.T) {
@@ -24,7 +24,7 @@ func Test_voicevox_QueryEditApiService(t *testing.T) {
 
 	t.Run("Test QueryEditApiService AccentPhrasesAccentPhrasesPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.QueryEditApi.AccentPhrasesAccentPhrasesPost(context.Background()).Execute()
 
@@ -36,7 +36,7 @@ func Test_voicevox_QueryEditApiService(t *testing.T) {
 
 	t.Run("Test QueryEditApiService MoraDataMoraDataPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.QueryEditApi.MoraDataMoraDataPost(context.Background()).Execute()
 
@@ -48,7 +48,7 @@ func Test_voicevox_QueryEditApiService(t *testing.T) {
 
 	t.Run("Test QueryEditApiService MoraLengthMoraLengthPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.QueryEditApi.MoraLengthMoraLengthPost(context.Background()).Execute()
 
@@ -60,7 +60,7 @@ func Test_voicevox_QueryEditApiService(t *testing.T) {
 
 	t.Run("Test QueryEditApiService MoraPitchMoraPitchPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.QueryEditApi.MoraPitchMoraPitchPost(context.Background()).Execute()
 

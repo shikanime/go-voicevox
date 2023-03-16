@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Cpu** | **bool** |  | 
-**Cuda** | **bool** |  | 
-**Dml** | **bool** |  | 
+**Cpu** | **bool** |  |
+**Cuda** | **bool** |  |
+**Dml** | **bool** |  |
 
 ## Methods
 
@@ -46,7 +46,6 @@ and a boolean to check if the value has been set.
 
 SetCpu sets Cpu field to given value.
 
-
 ### GetCuda
 
 `func (o *SupportedDevicesInfo) GetCuda() bool`
@@ -65,7 +64,6 @@ and a boolean to check if the value has been set.
 `func (o *SupportedDevicesInfo) SetCuda(v bool)`
 
 SetCuda sets Cuda field to given value.
-
 
 ### GetDml
 
@@ -86,8 +84,4 @@ and a boolean to check if the value has been set.
 
 SetDml sets Dml field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

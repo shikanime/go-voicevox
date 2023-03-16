@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Speaker** | [**Speaker**](Speaker.md) |  | 
-**SpeakerInfo** | [**SpeakerInfo**](SpeakerInfo.md) |  | 
+**Speaker** | [**Speaker**](Speaker.md) |  |
+**SpeakerInfo** | [**SpeakerInfo**](SpeakerInfo.md) |  |
 
 ## Methods
 
@@ -45,7 +45,6 @@ and a boolean to check if the value has been set.
 
 SetSpeaker sets Speaker field to given value.
 
-
 ### GetSpeakerInfo
 
 `func (o *LibrarySpeaker) GetSpeakerInfo() SpeakerInfo`
@@ -65,8 +64,4 @@ and a boolean to check if the value has been set.
 
 SetSpeakerInfo sets SpeakerInfo field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

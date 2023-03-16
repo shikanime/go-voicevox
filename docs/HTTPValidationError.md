@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Detail** | Pointer to [**[]ValidationError**](ValidationError.md) |  | [optional] 
+**Detail** | Pointer to [**[]ValidationError**](ValidationError.md) |  | [optional]
 
 ## Methods
 
@@ -50,7 +50,4 @@ SetDetail sets Detail field to given value.
 
 HasDetail returns a boolean if a field has been set.
 
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

@@ -1,6 +1,6 @@
 # \QueryEditApi
 
-All URIs are relative to *http://localhost:50021*
+All URIs are relative to *<http://localhost:50021>*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,15 +9,11 @@ Method | HTTP request | Description
 [**MoraLengthMoraLengthPost**](QueryEditApi.md#MoraLengthMoraLengthPost) | **Post** /mora_length | アクセント句から音素長を得る
 [**MoraPitchMoraPitchPost**](QueryEditApi.md#MoraPitchMoraPitchPost) | **Post** /mora_pitch | アクセント句から音高を得る
 
-
-
 ## AccentPhrasesAccentPhrasesPost
 
 > []AccentPhrase AccentPhrasesAccentPhrasesPost(ctx).Text(text).Speaker(speaker).IsKana(isKana).CoreVersion(coreVersion).Execute()
 
 テキストからアクセント句を得る
-
-
 
 ### Example
 
@@ -51,19 +47,16 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiAccentPhrasesAccentPhrasesPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **text** | **string** |  | 
- **speaker** | **int32** |  | 
+ **text** | **string** |  |
+ **speaker** | **int32** |  |
  **isKana** | **bool** |  | [default to false]
- **coreVersion** | **string** |  | 
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -81,7 +74,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## MoraDataMoraDataPost
 
@@ -120,18 +112,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiMoraDataMoraDataPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **speaker** | **int32** |  | 
- **accentPhrase** | [**[]AccentPhrase**](AccentPhrase.md) |  | 
- **coreVersion** | **string** |  | 
+ **speaker** | **int32** |  |
+ **accentPhrase** | [**[]AccentPhrase**](AccentPhrase.md) |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -149,7 +138,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## MoraLengthMoraLengthPost
 
@@ -188,18 +176,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiMoraLengthMoraLengthPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **speaker** | **int32** |  | 
- **accentPhrase** | [**[]AccentPhrase**](AccentPhrase.md) |  | 
- **coreVersion** | **string** |  | 
+ **speaker** | **int32** |  |
+ **accentPhrase** | [**[]AccentPhrase**](AccentPhrase.md) |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -217,7 +202,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## MoraPitchMoraPitchPost
 
@@ -256,18 +240,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiMoraPitchMoraPitchPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **speaker** | **int32** |  | 
- **accentPhrase** | [**[]AccentPhrase**](AccentPhrase.md) |  | 
- **coreVersion** | **string** |  | 
+ **speaker** | **int32** |  |
+ **accentPhrase** | [**[]AccentPhrase**](AccentPhrase.md) |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -285,4 +266,3 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-

@@ -3,11 +3,11 @@ all: gen format
 
 .PHONY: format
 format:
-	go fmt ./...
+	@pre-commit run --all-files
 
 .PHONY: gen
 gen:
-	openapi-generator-cli generate \
+	@openapi-generator-cli generate \
 		-i openapi.json \
 		-g go \
 		--git-host github.com \

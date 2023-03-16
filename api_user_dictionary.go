@@ -22,27 +22,27 @@ import (
 type UserDictionaryApi interface {
 
 	/*
-		AddUserDictWordUserDictWordPost Add User Dict Word
+			AddUserDictWordUserDictWordPost Add User Dict Word
 
-		ユーザー辞書に言葉を追加します。
+			ユーザー辞書に言葉を追加します。
 
-	Parameters
-	----------
-	surface : str
-	    言葉の表層形
-	pronunciation: str
-	    言葉の発音（カタカナ）
-	accent_type: int
-	    アクセント型（音が下がる場所を指す）
-	word_type: WordTypes, optional
-	    PROPER_NOUN（固有名詞）、COMMON_NOUN（普通名詞）、VERB（動詞）、ADJECTIVE（形容詞）、SUFFIX（語尾）のいずれか
-	priority: int, optional
-	    単語の優先度（0から10までの整数）
-	    数字が大きいほど優先度が高くなる
-	    1から9までの値を指定することを推奨
+		Parameters
+		----------
+		surface : str
+		    言葉の表層形
+		pronunciation: str
+		    言葉の発音（カタカナ）
+		accent_type: int
+		    アクセント型（音が下がる場所を指す）
+		word_type: WordTypes, optional
+		    PROPER_NOUN（固有名詞）、COMMON_NOUN（普通名詞）、VERB（動詞）、ADJECTIVE（形容詞）、SUFFIX（語尾）のいずれか
+		priority: int, optional
+		    単語の優先度（0から10までの整数）
+		    数字が大きいほど優先度が高くなる
+		    1から9までの値を指定することを推奨
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return UserDictionaryApiAddUserDictWordUserDictWordPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return UserDictionaryApiAddUserDictWordUserDictWordPostRequest
 	*/
 	AddUserDictWordUserDictWordPost(ctx context.Context) UserDictionaryApiAddUserDictWordUserDictWordPostRequest
 
@@ -51,18 +51,18 @@ type UserDictionaryApi interface {
 	AddUserDictWordUserDictWordPostExecute(r UserDictionaryApiAddUserDictWordUserDictWordPostRequest) (string, *http.Response, error)
 
 	/*
-		DeleteUserDictWordUserDictWordWordUuidDelete Delete User Dict Word
+			DeleteUserDictWordUserDictWordWordUuidDelete Delete User Dict Word
 
-		ユーザー辞書に登録されている言葉を削除します。
+			ユーザー辞書に登録されている言葉を削除します。
 
-	Parameters
-	----------
-	word_uuid: str
-	    削除する言葉のUUID
+		Parameters
+		----------
+		word_uuid: str
+		    削除する言葉のUUID
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@param wordUuid
-		@return UserDictionaryApiDeleteUserDictWordUserDictWordWordUuidDeleteRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@param wordUuid
+			@return UserDictionaryApiDeleteUserDictWordUserDictWordWordUuidDeleteRequest
 	*/
 	DeleteUserDictWordUserDictWordWordUuidDelete(ctx context.Context, wordUuid string) UserDictionaryApiDeleteUserDictWordUserDictWordWordUuidDeleteRequest
 
@@ -70,18 +70,18 @@ type UserDictionaryApi interface {
 	DeleteUserDictWordUserDictWordWordUuidDeleteExecute(r UserDictionaryApiDeleteUserDictWordUserDictWordWordUuidDeleteRequest) (*http.Response, error)
 
 	/*
-		GetUserDictWordsUserDictGet Get User Dict Words
+			GetUserDictWordsUserDictGet Get User Dict Words
 
-		ユーザー辞書に登録されている単語の一覧を返します。
-	単語の表層形(surface)は正規化済みの物を返します。
+			ユーザー辞書に登録されている単語の一覧を返します。
+		単語の表層形(surface)は正規化済みの物を返します。
 
-	Returns
-	-------
-	Dict[str, UserDictWord]
-	    単語のUUIDとその詳細
+		Returns
+		-------
+		Dict[str, UserDictWord]
+		    単語のUUIDとその詳細
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return UserDictionaryApiGetUserDictWordsUserDictGetRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return UserDictionaryApiGetUserDictWordsUserDictGetRequest
 	*/
 	GetUserDictWordsUserDictGet(ctx context.Context) UserDictionaryApiGetUserDictWordsUserDictGetRequest
 
@@ -90,19 +90,19 @@ type UserDictionaryApi interface {
 	GetUserDictWordsUserDictGetExecute(r UserDictionaryApiGetUserDictWordsUserDictGetRequest) (*map[string]UserDictWord, *http.Response, error)
 
 	/*
-		ImportUserDictWordsImportUserDictPost Import User Dict Words
+			ImportUserDictWordsImportUserDictPost Import User Dict Words
 
-		他のユーザー辞書をインポートします。
+			他のユーザー辞書をインポートします。
 
-	Parameters
-	----------
-	import_dict_data: Dict[str, UserDictWord]
-	    インポートするユーザー辞書のデータ
-	override: bool
-	    重複したエントリがあった場合、上書きするかどうか
+		Parameters
+		----------
+		import_dict_data: Dict[str, UserDictWord]
+		    インポートするユーザー辞書のデータ
+		override: bool
+		    重複したエントリがあった場合、上書きするかどうか
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return UserDictionaryApiImportUserDictWordsImportUserDictPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return UserDictionaryApiImportUserDictWordsImportUserDictPostRequest
 	*/
 	ImportUserDictWordsImportUserDictPost(ctx context.Context) UserDictionaryApiImportUserDictWordsImportUserDictPostRequest
 
@@ -110,30 +110,30 @@ type UserDictionaryApi interface {
 	ImportUserDictWordsImportUserDictPostExecute(r UserDictionaryApiImportUserDictWordsImportUserDictPostRequest) (*http.Response, error)
 
 	/*
-		RewriteUserDictWordUserDictWordWordUuidPut Rewrite User Dict Word
+			RewriteUserDictWordUserDictWordWordUuidPut Rewrite User Dict Word
 
-		ユーザー辞書に登録されている言葉を更新します。
+			ユーザー辞書に登録されている言葉を更新します。
 
-	Parameters
-	----------
-	surface : str
-	    言葉の表層形
-	pronunciation: str
-	    言葉の発音（カタカナ）
-	accent_type: int
-	    アクセント型（音が下がる場所を指す）
-	word_uuid: str
-	    更新する言葉のUUID
-	word_type: WordTypes, optional
-	    PROPER_NOUN（固有名詞）、COMMON_NOUN（普通名詞）、VERB（動詞）、ADJECTIVE（形容詞）、SUFFIX（語尾）のいずれか
-	priority: int, optional
-	    単語の優先度（0から10までの整数）
-	    数字が大きいほど優先度が高くなる
-	    1から9までの値を指定することを推奨
+		Parameters
+		----------
+		surface : str
+		    言葉の表層形
+		pronunciation: str
+		    言葉の発音（カタカナ）
+		accent_type: int
+		    アクセント型（音が下がる場所を指す）
+		word_uuid: str
+		    更新する言葉のUUID
+		word_type: WordTypes, optional
+		    PROPER_NOUN（固有名詞）、COMMON_NOUN（普通名詞）、VERB（動詞）、ADJECTIVE（形容詞）、SUFFIX（語尾）のいずれか
+		priority: int, optional
+		    単語の優先度（0から10までの整数）
+		    数字が大きいほど優先度が高くなる
+		    1から9までの値を指定することを推奨
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@param wordUuid
-		@return UserDictionaryApiRewriteUserDictWordUserDictWordWordUuidPutRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@param wordUuid
+			@return UserDictionaryApiRewriteUserDictWordUserDictWordWordUuidPutRequest
 	*/
 	RewriteUserDictWordUserDictWordWordUuidPut(ctx context.Context, wordUuid string) UserDictionaryApiRewriteUserDictWordUserDictWordWordUuidPutRequest
 

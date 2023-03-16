@@ -4,17 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ManifestVersion** | **string** |  | 
-**Name** | **string** |  | 
-**BrandName** | **string** |  | 
-**Uuid** | **string** |  | 
-**Url** | **string** |  | 
-**Icon** | **string** |  | 
-**DefaultSamplingRate** | **int32** |  | 
-**TermsOfService** | **string** |  | 
-**UpdateInfos** | [**[]UpdateInfo**](UpdateInfo.md) |  | 
-**DependencyLicenses** | [**[]LicenseInfo**](LicenseInfo.md) |  | 
-**SupportedFeatures** | [**SupportedFeatures**](SupportedFeatures.md) |  | 
+**ManifestVersion** | **string** |  |
+**Name** | **string** |  |
+**BrandName** | **string** |  |
+**Uuid** | **string** |  |
+**Url** | **string** |  |
+**Icon** | **string** |  |
+**DefaultSamplingRate** | **int32** |  |
+**TermsOfService** | **string** |  |
+**UpdateInfos** | [**[]UpdateInfo**](UpdateInfo.md) |  |
+**DependencyLicenses** | [**[]LicenseInfo**](LicenseInfo.md) |  |
+**SupportedFeatures** | [**SupportedFeatures**](SupportedFeatures.md) |  |
 
 ## Methods
 
@@ -54,7 +54,6 @@ and a boolean to check if the value has been set.
 
 SetManifestVersion sets ManifestVersion field to given value.
 
-
 ### GetName
 
 `func (o *EngineManifest) GetName() string`
@@ -73,7 +72,6 @@ and a boolean to check if the value has been set.
 `func (o *EngineManifest) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetBrandName
 
@@ -94,7 +92,6 @@ and a boolean to check if the value has been set.
 
 SetBrandName sets BrandName field to given value.
 
-
 ### GetUuid
 
 `func (o *EngineManifest) GetUuid() string`
@@ -113,7 +110,6 @@ and a boolean to check if the value has been set.
 `func (o *EngineManifest) SetUuid(v string)`
 
 SetUuid sets Uuid field to given value.
-
 
 ### GetUrl
 
@@ -134,7 +130,6 @@ and a boolean to check if the value has been set.
 
 SetUrl sets Url field to given value.
 
-
 ### GetIcon
 
 `func (o *EngineManifest) GetIcon() string`
@@ -153,7 +148,6 @@ and a boolean to check if the value has been set.
 `func (o *EngineManifest) SetIcon(v string)`
 
 SetIcon sets Icon field to given value.
-
 
 ### GetDefaultSamplingRate
 
@@ -174,7 +168,6 @@ and a boolean to check if the value has been set.
 
 SetDefaultSamplingRate sets DefaultSamplingRate field to given value.
 
-
 ### GetTermsOfService
 
 `func (o *EngineManifest) GetTermsOfService() string`
@@ -193,7 +186,6 @@ and a boolean to check if the value has been set.
 `func (o *EngineManifest) SetTermsOfService(v string)`
 
 SetTermsOfService sets TermsOfService field to given value.
-
 
 ### GetUpdateInfos
 
@@ -214,7 +206,6 @@ and a boolean to check if the value has been set.
 
 SetUpdateInfos sets UpdateInfos field to given value.
 
-
 ### GetDependencyLicenses
 
 `func (o *EngineManifest) GetDependencyLicenses() []LicenseInfo`
@@ -233,7 +224,6 @@ and a boolean to check if the value has been set.
 `func (o *EngineManifest) SetDependencyLicenses(v []LicenseInfo)`
 
 SetDependencyLicenses sets DependencyLicenses field to given value.
-
 
 ### GetSupportedFeatures
 
@@ -254,8 +244,4 @@ and a boolean to check if the value has been set.
 
 SetSupportedFeatures sets SupportedFeatures field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

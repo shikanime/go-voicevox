@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** |  | 
-**Uuid** | **string** |  | 
-**Version** | **string** |  | 
-**DownloadUrl** | **string** |  | 
-**Bytes** | **int32** |  | 
-**Speakers** | [**[]LibrarySpeaker**](LibrarySpeaker.md) |  | 
+**Name** | **string** |  |
+**Uuid** | **string** |  |
+**Version** | **string** |  |
+**DownloadUrl** | **string** |  |
+**Bytes** | **int32** |  |
+**Speakers** | [**[]LibrarySpeaker**](LibrarySpeaker.md) |  |
 
 ## Methods
 
@@ -49,7 +49,6 @@ and a boolean to check if the value has been set.
 
 SetName sets Name field to given value.
 
-
 ### GetUuid
 
 `func (o *DownloadableLibrary) GetUuid() string`
@@ -68,7 +67,6 @@ and a boolean to check if the value has been set.
 `func (o *DownloadableLibrary) SetUuid(v string)`
 
 SetUuid sets Uuid field to given value.
-
 
 ### GetVersion
 
@@ -89,7 +87,6 @@ and a boolean to check if the value has been set.
 
 SetVersion sets Version field to given value.
 
-
 ### GetDownloadUrl
 
 `func (o *DownloadableLibrary) GetDownloadUrl() string`
@@ -108,7 +105,6 @@ and a boolean to check if the value has been set.
 `func (o *DownloadableLibrary) SetDownloadUrl(v string)`
 
 SetDownloadUrl sets DownloadUrl field to given value.
-
 
 ### GetBytes
 
@@ -129,7 +125,6 @@ and a boolean to check if the value has been set.
 
 SetBytes sets Bytes field to given value.
 
-
 ### GetSpeakers
 
 `func (o *DownloadableLibrary) GetSpeakers() []LibrarySpeaker`
@@ -149,8 +144,4 @@ and a boolean to check if the value has been set.
 
 SetSpeakers sets Speakers field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

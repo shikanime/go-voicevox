@@ -1,6 +1,6 @@
 # \UserDictionaryApi
 
-All URIs are relative to *http://localhost:50021*
+All URIs are relative to *<http://localhost:50021>*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,15 +10,11 @@ Method | HTTP request | Description
 [**ImportUserDictWordsImportUserDictPost**](UserDictionaryApi.md#ImportUserDictWordsImportUserDictPost) | **Post** /import_user_dict | Import User Dict Words
 [**RewriteUserDictWordUserDictWordWordUuidPut**](UserDictionaryApi.md#RewriteUserDictWordUserDictWordWordUuidPut) | **Put** /user_dict_word/{word_uuid} | Rewrite User Dict Word
 
-
-
 ## AddUserDictWordUserDictWordPost
 
 > string AddUserDictWordUserDictWordPost(ctx).Surface(surface).Pronunciation(pronunciation).AccentType(accentType).WordType(wordType).Priority(priority).Execute()
 
 Add User Dict Word
-
-
 
 ### Example
 
@@ -53,20 +49,17 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiAddUserDictWordUserDictWordPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **surface** | **string** |  | 
- **pronunciation** | **string** |  | 
- **accentType** | **int32** |  | 
- **wordType** | [**WordTypes**](WordTypes.md) |  | 
- **priority** | **int32** |  | 
+ **surface** | **string** |  |
+ **pronunciation** | **string** |  |
+ **accentType** | **int32** |  |
+ **wordType** | [**WordTypes**](WordTypes.md) |  |
+ **priority** | **int32** |  |
 
 ### Return type
 
@@ -85,14 +78,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## DeleteUserDictWordUserDictWordWordUuidDelete
 
 > DeleteUserDictWordUserDictWordWordUuidDelete(ctx, wordUuid).Execute()
 
 Delete User Dict Word
-
-
 
 ### Example
 
@@ -121,20 +111,17 @@ func main() {
 
 ### Path Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**wordUuid** | **string** |  | 
+**wordUuid** | **string** |  |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeleteUserDictWordUserDictWordWordUuidDeleteRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-
 
 ### Return type
 
@@ -153,14 +140,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## GetUserDictWordsUserDictGet
 
 > map[string]UserDictWord GetUserDictWordsUserDictGet(ctx).Execute()
 
 Get User Dict Words
-
-
 
 ### Example
 
@@ -196,7 +180,6 @@ This endpoint does not need any parameter.
 
 Other parameters are passed through a pointer to a apiGetUserDictWordsUserDictGetRequest struct via the builder pattern
 
-
 ### Return type
 
 [**map[string]UserDictWord**](UserDictWord.md)
@@ -214,14 +197,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## ImportUserDictWordsImportUserDictPost
 
 > ImportUserDictWordsImportUserDictPost(ctx).Override(override).RequestBody(requestBody).Execute()
 
 Import User Dict Words
-
-
 
 ### Example
 
@@ -251,17 +231,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiImportUserDictWordsImportUserDictPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **override** | **bool** |  | 
- **requestBody** | [**map[string]UserDictWord**](UserDictWord.md) |  | 
+ **override** | **bool** |  |
+ **requestBody** | [**map[string]UserDictWord**](UserDictWord.md) |  |
 
 ### Return type
 
@@ -280,14 +257,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## RewriteUserDictWordUserDictWordWordUuidPut
 
 > RewriteUserDictWordUserDictWordWordUuidPut(ctx, wordUuid).Surface(surface).Pronunciation(pronunciation).AccentType(accentType).WordType(wordType).Priority(priority).Execute()
 
 Rewrite User Dict Word
-
-
 
 ### Example
 
@@ -321,25 +295,23 @@ func main() {
 
 ### Path Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**wordUuid** | **string** |  | 
+**wordUuid** | **string** |  |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiRewriteUserDictWordUserDictWordWordUuidPutRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **surface** | **string** |  | 
- **pronunciation** | **string** |  | 
- **accentType** | **int32** |  | 
- **wordType** | [**WordTypes**](WordTypes.md) |  | 
- **priority** | **int32** |  | 
+ **surface** | **string** |  |
+ **pronunciation** | **string** |  |
+ **accentType** | **int32** |  |
+ **wordType** | [**WordTypes**](WordTypes.md) |  |
+ **priority** | **int32** |  |
 
 ### Return type
 
@@ -357,4 +329,3 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-

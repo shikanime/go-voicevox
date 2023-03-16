@@ -1,6 +1,6 @@
 # \SpeechSynthesisApi
 
-All URIs are relative to *http://localhost:50021*
+All URIs are relative to *<http://localhost:50021>*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,8 +9,6 @@ Method | HTTP request | Description
 [**MultiSynthesisMultiSynthesisPost**](SpeechSynthesisApi.md#MultiSynthesisMultiSynthesisPost) | **Post** /multi_synthesis | 複数まとめて音声合成する
 [**SynthesisMorphingSynthesisMorphingPost**](SpeechSynthesisApi.md#SynthesisMorphingSynthesisMorphingPost) | **Post** /synthesis_morphing | 2人の話者でモーフィングした音声を合成する
 [**SynthesisSynthesisPost**](SpeechSynthesisApi.md#SynthesisSynthesisPost) | **Post** /synthesis | 音声合成する
-
-
 
 ## CancellableSynthesisCancellableSynthesisPost
 
@@ -49,18 +47,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiCancellableSynthesisCancellableSynthesisPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **speaker** | **int32** |  | 
- **audioQuery** | [**AudioQuery**](AudioQuery.md) |  | 
- **coreVersion** | **string** |  | 
+ **speaker** | **int32** |  |
+ **audioQuery** | [**AudioQuery**](AudioQuery.md) |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -79,14 +74,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## MorphableTargetsMorphableTargetsPost
 
 > []map[string]MorphableTargetInfo MorphableTargetsMorphableTargetsPost(ctx).RequestBody(requestBody).CoreVersion(coreVersion).Execute()
 
 指定した話者に対してエンジン内の話者がモーフィングが可能か判定する
-
-
 
 ### Example
 
@@ -118,17 +110,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiMorphableTargetsMorphableTargetsPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestBody** | **[]int32** |  | 
- **coreVersion** | **string** |  | 
+ **requestBody** | **[]int32** |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -146,7 +135,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## MultiSynthesisMultiSynthesisPost
 
@@ -185,18 +173,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiMultiSynthesisMultiSynthesisPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **speaker** | **int32** |  | 
- **audioQuery** | [**[]AudioQuery**](AudioQuery.md) |  | 
- **coreVersion** | **string** |  | 
+ **speaker** | **int32** |  |
+ **audioQuery** | [**[]AudioQuery**](AudioQuery.md) |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -215,14 +200,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## SynthesisMorphingSynthesisMorphingPost
 
 > *os.File SynthesisMorphingSynthesisMorphingPost(ctx).BaseSpeaker(baseSpeaker).TargetSpeaker(targetSpeaker).MorphRate(morphRate).AudioQuery(audioQuery).CoreVersion(coreVersion).Execute()
 
 2人の話者でモーフィングした音声を合成する
-
-
 
 ### Example
 
@@ -257,20 +239,17 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSynthesisMorphingSynthesisMorphingPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **baseSpeaker** | **int32** |  | 
- **targetSpeaker** | **int32** |  | 
- **morphRate** | **float32** |  | 
- **audioQuery** | [**AudioQuery**](AudioQuery.md) |  | 
- **coreVersion** | **string** |  | 
+ **baseSpeaker** | **int32** |  |
+ **targetSpeaker** | **int32** |  |
+ **morphRate** | **float32** |  |
+ **audioQuery** | [**AudioQuery**](AudioQuery.md) |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -288,7 +267,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## SynthesisSynthesisPost
 
@@ -328,19 +306,16 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSynthesisSynthesisPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **speaker** | **int32** |  | 
- **audioQuery** | [**AudioQuery**](AudioQuery.md) |  | 
+ **speaker** | **int32** |  |
+ **audioQuery** | [**AudioQuery**](AudioQuery.md) |  |
  **enableInterrogativeUpspeak** | **bool** | 疑問系のテキストが与えられたら語尾を自動調整する | [default to true]
- **coreVersion** | **string** |  | 
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -358,4 +333,3 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-

@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** |  | 
-**Version** | Pointer to **string** |  | [optional] 
-**License** | Pointer to **string** |  | [optional] 
-**Text** | **string** |  | 
+**Name** | **string** |  |
+**Version** | Pointer to **string** |  | [optional]
+**License** | Pointer to **string** |  | [optional]
+**Text** | **string** |  |
 
 ## Methods
 
@@ -46,7 +46,6 @@ and a boolean to check if the value has been set.
 `func (o *LicenseInfo) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetVersion
 
@@ -117,8 +116,4 @@ and a boolean to check if the value has been set.
 
 SetText sets Text field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

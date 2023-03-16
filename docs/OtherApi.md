@@ -1,6 +1,6 @@
 # \OtherApi
 
-All URIs are relative to *http://localhost:50021*
+All URIs are relative to *<http://localhost:50021>*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,15 +18,11 @@ Method | HTTP request | Description
 [**UpdatePresetUpdatePresetPost**](OtherApi.md#UpdatePresetUpdatePresetPost) | **Post** /update_preset | Update Preset
 [**VersionVersionGet**](OtherApi.md#VersionVersionGet) | **Get** /version | Version
 
-
-
 ## AddPresetAddPresetPost
 
 > int32 AddPresetAddPresetPost(ctx).Preset(preset).Execute()
 
 Add Preset
-
-
 
 ### Example
 
@@ -57,16 +53,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiAddPresetAddPresetPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **preset** | [**Preset**](Preset.md) |  | 
+ **preset** | [**Preset**](Preset.md) |  |
 
 ### Return type
 
@@ -85,14 +78,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## ConnectWavesConnectWavesPost
 
 > *os.File ConnectWavesConnectWavesPost(ctx).RequestBody(requestBody).Execute()
 
 base64エンコードされた複数のwavデータを一つに結合する
-
-
 
 ### Example
 
@@ -123,16 +113,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiConnectWavesConnectWavesPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestBody** | **[]string** |  | 
+ **requestBody** | **[]string** |  |
 
 ### Return type
 
@@ -150,7 +137,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## CoreVersionsCoreVersionsGet
 
@@ -192,7 +178,6 @@ This endpoint does not need any parameter.
 
 Other parameters are passed through a pointer to a apiCoreVersionsCoreVersionsGetRequest struct via the builder pattern
 
-
 ### Return type
 
 **[]string**
@@ -210,14 +195,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## DeletePresetDeletePresetPost
 
 > DeletePresetDeletePresetPost(ctx).Id(id).Execute()
 
 Delete Preset
-
-
 
 ### Example
 
@@ -246,16 +228,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiDeletePresetDeletePresetPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int32** |  | 
+ **id** | **int32** |  |
 
 ### Return type
 
@@ -273,7 +252,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## EngineManifestEngineManifestGet
 
@@ -315,7 +293,6 @@ This endpoint does not need any parameter.
 
 Other parameters are passed through a pointer to a apiEngineManifestEngineManifestGetRequest struct via the builder pattern
 
-
 ### Return type
 
 [**EngineManifest**](EngineManifest.md)
@@ -333,14 +310,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## GetPresetsPresetsGet
 
 > []Preset GetPresetsPresetsGet(ctx).Execute()
 
 Get Presets
-
-
 
 ### Example
 
@@ -376,7 +350,6 @@ This endpoint does not need any parameter.
 
 Other parameters are passed through a pointer to a apiGetPresetsPresetsGetRequest struct via the builder pattern
 
-
 ### Return type
 
 [**[]Preset**](Preset.md)
@@ -394,14 +367,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## InitializeSpeakerInitializeSpeakerPost
 
 > InitializeSpeakerInitializeSpeakerPost(ctx).Speaker(speaker).SkipReinit(skipReinit).CoreVersion(coreVersion).Execute()
 
 Initialize Speaker
-
-
 
 ### Example
 
@@ -432,18 +402,15 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiInitializeSpeakerInitializeSpeakerPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **speaker** | **int32** |  | 
+ **speaker** | **int32** |  |
  **skipReinit** | **bool** | 既に初期化済みの話者の再初期化をスキップするかどうか | [default to false]
- **coreVersion** | **string** |  | 
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -462,14 +429,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## IsInitializedSpeakerIsInitializedSpeakerGet
 
 > bool IsInitializedSpeakerIsInitializedSpeakerGet(ctx).Speaker(speaker).CoreVersion(coreVersion).Execute()
 
 Is Initialized Speaker
-
-
 
 ### Example
 
@@ -501,17 +465,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiIsInitializedSpeakerIsInitializedSpeakerGetRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **speaker** | **int32** |  | 
- **coreVersion** | **string** |  | 
+ **speaker** | **int32** |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -530,14 +491,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## SpeakerInfoSpeakerInfoGet
 
 > SpeakerInfo SpeakerInfoSpeakerInfoGet(ctx).SpeakerUuid(speakerUuid).CoreVersion(coreVersion).Execute()
 
 Speaker Info
-
-
 
 ### Example
 
@@ -569,17 +527,14 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSpeakerInfoSpeakerInfoGetRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **speakerUuid** | **string** |  | 
- **coreVersion** | **string** |  | 
+ **speakerUuid** | **string** |  |
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -597,7 +552,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## SpeakersSpeakersGet
 
@@ -634,16 +588,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSpeakersSpeakersGetRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **coreVersion** | **string** |  | 
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -661,7 +612,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## SupportedDevicesSupportedDevicesGet
 
@@ -698,16 +648,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiSupportedDevicesSupportedDevicesGetRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **coreVersion** | **string** |  | 
+ **coreVersion** | **string** |  |
 
 ### Return type
 
@@ -726,14 +673,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## UpdatePresetUpdatePresetPost
 
 > int32 UpdatePresetUpdatePresetPost(ctx).Preset(preset).Execute()
 
 Update Preset
-
-
 
 ### Example
 
@@ -764,16 +708,13 @@ func main() {
 
 ### Path Parameters
 
-
-
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiUpdatePresetUpdatePresetPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **preset** | [**Preset**](Preset.md) |  | 
+ **preset** | [**Preset**](Preset.md) |  |
 
 ### Return type
 
@@ -791,7 +732,6 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-
 
 ## VersionVersionGet
 
@@ -833,7 +773,6 @@ This endpoint does not need any parameter.
 
 Other parameters are passed through a pointer to a apiVersionVersionGetRequest struct via the builder pattern
 
-
 ### Return type
 
 **interface{}**
@@ -850,4 +789,3 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-

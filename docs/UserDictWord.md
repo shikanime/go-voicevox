@@ -4,21 +4,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Surface** | **string** |  | 
-**Priority** | **int32** |  | 
+**Surface** | **string** |  |
+**Priority** | **int32** |  |
 **ContextId** | Pointer to **int32** |  | [optional] [default to 1348]
-**PartOfSpeech** | **string** |  | 
-**PartOfSpeechDetail1** | **string** |  | 
-**PartOfSpeechDetail2** | **string** |  | 
-**PartOfSpeechDetail3** | **string** |  | 
-**InflectionalType** | **string** |  | 
-**InflectionalForm** | **string** |  | 
-**Stem** | **string** |  | 
-**Yomi** | **string** |  | 
-**Pronunciation** | **string** |  | 
-**AccentType** | **int32** |  | 
-**MoraCount** | Pointer to **int32** |  | [optional] 
-**AccentAssociativeRule** | **string** |  | 
+**PartOfSpeech** | **string** |  |
+**PartOfSpeechDetail1** | **string** |  |
+**PartOfSpeechDetail2** | **string** |  |
+**PartOfSpeechDetail3** | **string** |  |
+**InflectionalType** | **string** |  |
+**InflectionalForm** | **string** |  |
+**Stem** | **string** |  |
+**Yomi** | **string** |  |
+**Pronunciation** | **string** |  |
+**AccentType** | **int32** |  |
+**MoraCount** | Pointer to **int32** |  | [optional]
+**AccentAssociativeRule** | **string** |  |
 
 ## Methods
 
@@ -58,7 +58,6 @@ and a boolean to check if the value has been set.
 
 SetSurface sets Surface field to given value.
 
-
 ### GetPriority
 
 `func (o *UserDictWord) GetPriority() int32`
@@ -77,7 +76,6 @@ and a boolean to check if the value has been set.
 `func (o *UserDictWord) SetPriority(v int32)`
 
 SetPriority sets Priority field to given value.
-
 
 ### GetContextId
 
@@ -123,7 +121,6 @@ and a boolean to check if the value has been set.
 
 SetPartOfSpeech sets PartOfSpeech field to given value.
 
-
 ### GetPartOfSpeechDetail1
 
 `func (o *UserDictWord) GetPartOfSpeechDetail1() string`
@@ -142,7 +139,6 @@ and a boolean to check if the value has been set.
 `func (o *UserDictWord) SetPartOfSpeechDetail1(v string)`
 
 SetPartOfSpeechDetail1 sets PartOfSpeechDetail1 field to given value.
-
 
 ### GetPartOfSpeechDetail2
 
@@ -163,7 +159,6 @@ and a boolean to check if the value has been set.
 
 SetPartOfSpeechDetail2 sets PartOfSpeechDetail2 field to given value.
 
-
 ### GetPartOfSpeechDetail3
 
 `func (o *UserDictWord) GetPartOfSpeechDetail3() string`
@@ -182,7 +177,6 @@ and a boolean to check if the value has been set.
 `func (o *UserDictWord) SetPartOfSpeechDetail3(v string)`
 
 SetPartOfSpeechDetail3 sets PartOfSpeechDetail3 field to given value.
-
 
 ### GetInflectionalType
 
@@ -203,7 +197,6 @@ and a boolean to check if the value has been set.
 
 SetInflectionalType sets InflectionalType field to given value.
 
-
 ### GetInflectionalForm
 
 `func (o *UserDictWord) GetInflectionalForm() string`
@@ -222,7 +215,6 @@ and a boolean to check if the value has been set.
 `func (o *UserDictWord) SetInflectionalForm(v string)`
 
 SetInflectionalForm sets InflectionalForm field to given value.
-
 
 ### GetStem
 
@@ -243,7 +235,6 @@ and a boolean to check if the value has been set.
 
 SetStem sets Stem field to given value.
 
-
 ### GetYomi
 
 `func (o *UserDictWord) GetYomi() string`
@@ -262,7 +253,6 @@ and a boolean to check if the value has been set.
 `func (o *UserDictWord) SetYomi(v string)`
 
 SetYomi sets Yomi field to given value.
-
 
 ### GetPronunciation
 
@@ -283,7 +273,6 @@ and a boolean to check if the value has been set.
 
 SetPronunciation sets Pronunciation field to given value.
 
-
 ### GetAccentType
 
 `func (o *UserDictWord) GetAccentType() int32`
@@ -302,7 +291,6 @@ and a boolean to check if the value has been set.
 `func (o *UserDictWord) SetAccentType(v int32)`
 
 SetAccentType sets AccentType field to given value.
-
 
 ### GetMoraCount
 
@@ -348,8 +336,4 @@ and a boolean to check if the value has been set.
 
 SetAccentAssociativeRule sets AccentAssociativeRule field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

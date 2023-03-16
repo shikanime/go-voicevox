@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Moras** | [**[]Mora**](Mora.md) |  | 
-**Accent** | **int32** |  | 
-**PauseMora** | Pointer to [**Mora**](Mora.md) |  | [optional] 
+**Moras** | [**[]Mora**](Mora.md) |  |
+**Accent** | **int32** |  |
+**PauseMora** | Pointer to [**Mora**](Mora.md) |  | [optional]
 **IsInterrogative** | Pointer to **bool** |  | [optional] [default to false]
 
 ## Methods
@@ -47,7 +47,6 @@ and a boolean to check if the value has been set.
 
 SetMoras sets Moras field to given value.
 
-
 ### GetAccent
 
 `func (o *AccentPhrase) GetAccent() int32`
@@ -66,7 +65,6 @@ and a boolean to check if the value has been set.
 `func (o *AccentPhrase) SetAccent(v int32)`
 
 SetAccent sets Accent field to given value.
-
 
 ### GetPauseMora
 
@@ -118,7 +116,4 @@ SetIsInterrogative sets IsInterrogative field to given value.
 
 HasIsInterrogative returns a boolean if a field has been set.
 
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

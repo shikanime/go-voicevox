@@ -4,16 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **int32** |  | 
-**Name** | **string** |  | 
-**SpeakerUuid** | **string** |  | 
-**StyleId** | **int32** |  | 
-**SpeedScale** | **float32** |  | 
-**PitchScale** | **float32** |  | 
-**IntonationScale** | **float32** |  | 
-**VolumeScale** | **float32** |  | 
-**PrePhonemeLength** | **float32** |  | 
-**PostPhonemeLength** | **float32** |  | 
+**Id** | **int32** |  |
+**Name** | **string** |  |
+**SpeakerUuid** | **string** |  |
+**StyleId** | **int32** |  |
+**SpeedScale** | **float32** |  |
+**PitchScale** | **float32** |  |
+**IntonationScale** | **float32** |  |
+**VolumeScale** | **float32** |  |
+**PrePhonemeLength** | **float32** |  |
+**PostPhonemeLength** | **float32** |  |
 
 ## Methods
 
@@ -53,7 +53,6 @@ and a boolean to check if the value has been set.
 
 SetId sets Id field to given value.
 
-
 ### GetName
 
 `func (o *Preset) GetName() string`
@@ -72,7 +71,6 @@ and a boolean to check if the value has been set.
 `func (o *Preset) SetName(v string)`
 
 SetName sets Name field to given value.
-
 
 ### GetSpeakerUuid
 
@@ -93,7 +91,6 @@ and a boolean to check if the value has been set.
 
 SetSpeakerUuid sets SpeakerUuid field to given value.
 
-
 ### GetStyleId
 
 `func (o *Preset) GetStyleId() int32`
@@ -112,7 +109,6 @@ and a boolean to check if the value has been set.
 `func (o *Preset) SetStyleId(v int32)`
 
 SetStyleId sets StyleId field to given value.
-
 
 ### GetSpeedScale
 
@@ -133,7 +129,6 @@ and a boolean to check if the value has been set.
 
 SetSpeedScale sets SpeedScale field to given value.
 
-
 ### GetPitchScale
 
 `func (o *Preset) GetPitchScale() float32`
@@ -152,7 +147,6 @@ and a boolean to check if the value has been set.
 `func (o *Preset) SetPitchScale(v float32)`
 
 SetPitchScale sets PitchScale field to given value.
-
 
 ### GetIntonationScale
 
@@ -173,7 +167,6 @@ and a boolean to check if the value has been set.
 
 SetIntonationScale sets IntonationScale field to given value.
 
-
 ### GetVolumeScale
 
 `func (o *Preset) GetVolumeScale() float32`
@@ -192,7 +185,6 @@ and a boolean to check if the value has been set.
 `func (o *Preset) SetVolumeScale(v float32)`
 
 SetVolumeScale sets VolumeScale field to given value.
-
 
 ### GetPrePhonemeLength
 
@@ -213,7 +205,6 @@ and a boolean to check if the value has been set.
 
 SetPrePhonemeLength sets PrePhonemeLength field to given value.
 
-
 ### GetPostPhonemeLength
 
 `func (o *Preset) GetPostPhonemeLength() float32`
@@ -233,8 +224,4 @@ and a boolean to check if the value has been set.
 
 SetPostPhonemeLength sets PostPhonemeLength field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

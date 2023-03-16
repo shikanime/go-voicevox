@@ -22,16 +22,16 @@ import (
 type AudioLibraryManagementApi interface {
 
 	/*
-		DownloadableLibrariesDownloadableLibrariesGet Downloadable Libraries
+			DownloadableLibrariesDownloadableLibrariesGet Downloadable Libraries
 
-		ダウンロード可能な音声ライブラリの情報を返します。
+			ダウンロード可能な音声ライブラリの情報を返します。
 
-	Returns
-	-------
-	ret_data: List[DownloadableLibrary]
+		Returns
+		-------
+		ret_data: List[DownloadableLibrary]
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return AudioLibraryManagementApiDownloadableLibrariesDownloadableLibrariesGetRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return AudioLibraryManagementApiDownloadableLibrariesDownloadableLibrariesGetRequest
 	*/
 	DownloadableLibrariesDownloadableLibrariesGet(ctx context.Context) AudioLibraryManagementApiDownloadableLibrariesDownloadableLibrariesGetRequest
 
@@ -40,19 +40,19 @@ type AudioLibraryManagementApi interface {
 	DownloadableLibrariesDownloadableLibrariesGetExecute(r AudioLibraryManagementApiDownloadableLibrariesDownloadableLibrariesGetRequest) ([]DownloadableLibrary, *http.Response, error)
 
 	/*
-		InstallLibraryInstallLibraryLibraryUuidPost Install Library
+			InstallLibraryInstallLibraryLibraryUuidPost Install Library
 
-		音声ライブラリをインストールします。
-	音声ライブラリのZIPファイルをリクエストボディとして送信してください。
+			音声ライブラリをインストールします。
+		音声ライブラリのZIPファイルをリクエストボディとして送信してください。
 
-	Parameters
-	----------
-	library_uuid: str
-	    音声ライブラリのID
+		Parameters
+		----------
+		library_uuid: str
+		    音声ライブラリのID
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@param libraryUuid
-		@return AudioLibraryManagementApiInstallLibraryInstallLibraryLibraryUuidPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@param libraryUuid
+			@return AudioLibraryManagementApiInstallLibraryInstallLibraryLibraryUuidPostRequest
 	*/
 	InstallLibraryInstallLibraryLibraryUuidPost(ctx context.Context, libraryUuid string) AudioLibraryManagementApiInstallLibraryInstallLibraryLibraryUuidPostRequest
 
@@ -60,16 +60,16 @@ type AudioLibraryManagementApi interface {
 	InstallLibraryInstallLibraryLibraryUuidPostExecute(r AudioLibraryManagementApiInstallLibraryInstallLibraryLibraryUuidPostRequest) (*http.Response, error)
 
 	/*
-		InstalledLibrariesInstalledLibrariesGet Installed Libraries
+			InstalledLibrariesInstalledLibrariesGet Installed Libraries
 
-		インストールした音声ライブラリの情報を返します。
+			インストールした音声ライブラリの情報を返します。
 
-	Returns
-	-------
-	ret_data: List[DownloadableLibrary]
+		Returns
+		-------
+		ret_data: List[DownloadableLibrary]
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return AudioLibraryManagementApiInstalledLibrariesInstalledLibrariesGetRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return AudioLibraryManagementApiInstalledLibrariesInstalledLibrariesGetRequest
 	*/
 	InstalledLibrariesInstalledLibrariesGet(ctx context.Context) AudioLibraryManagementApiInstalledLibrariesInstalledLibrariesGetRequest
 

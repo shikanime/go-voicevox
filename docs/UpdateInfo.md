@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Version** | **string** |  | 
-**Descriptions** | **[]string** |  | 
-**Contributors** | Pointer to **[]string** |  | [optional] 
+**Version** | **string** |  |
+**Descriptions** | **[]string** |  |
+**Contributors** | Pointer to **[]string** |  | [optional]
 
 ## Methods
 
@@ -46,7 +46,6 @@ and a boolean to check if the value has been set.
 
 SetVersion sets Version field to given value.
 
-
 ### GetDescriptions
 
 `func (o *UpdateInfo) GetDescriptions() []string`
@@ -65,7 +64,6 @@ and a boolean to check if the value has been set.
 `func (o *UpdateInfo) SetDescriptions(v []string)`
 
 SetDescriptions sets Descriptions field to given value.
-
 
 ### GetContributors
 
@@ -92,7 +90,4 @@ SetContributors sets Contributors field to given value.
 
 HasContributors returns a boolean if a field has been set.
 
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

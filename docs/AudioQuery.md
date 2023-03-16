@@ -4,16 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AccentPhrases** | [**[]AccentPhrase**](AccentPhrase.md) |  | 
-**SpeedScale** | **float32** |  | 
-**PitchScale** | **float32** |  | 
-**IntonationScale** | **float32** |  | 
-**VolumeScale** | **float32** |  | 
-**PrePhonemeLength** | **float32** |  | 
-**PostPhonemeLength** | **float32** |  | 
-**OutputSamplingRate** | **int32** |  | 
-**OutputStereo** | **bool** |  | 
-**Kana** | Pointer to **string** |  | [optional] 
+**AccentPhrases** | [**[]AccentPhrase**](AccentPhrase.md) |  |
+**SpeedScale** | **float32** |  |
+**PitchScale** | **float32** |  |
+**IntonationScale** | **float32** |  |
+**VolumeScale** | **float32** |  |
+**PrePhonemeLength** | **float32** |  |
+**PostPhonemeLength** | **float32** |  |
+**OutputSamplingRate** | **int32** |  |
+**OutputStereo** | **bool** |  |
+**Kana** | Pointer to **string** |  | [optional]
 
 ## Methods
 
@@ -53,7 +53,6 @@ and a boolean to check if the value has been set.
 
 SetAccentPhrases sets AccentPhrases field to given value.
 
-
 ### GetSpeedScale
 
 `func (o *AudioQuery) GetSpeedScale() float32`
@@ -72,7 +71,6 @@ and a boolean to check if the value has been set.
 `func (o *AudioQuery) SetSpeedScale(v float32)`
 
 SetSpeedScale sets SpeedScale field to given value.
-
 
 ### GetPitchScale
 
@@ -93,7 +91,6 @@ and a boolean to check if the value has been set.
 
 SetPitchScale sets PitchScale field to given value.
 
-
 ### GetIntonationScale
 
 `func (o *AudioQuery) GetIntonationScale() float32`
@@ -112,7 +109,6 @@ and a boolean to check if the value has been set.
 `func (o *AudioQuery) SetIntonationScale(v float32)`
 
 SetIntonationScale sets IntonationScale field to given value.
-
 
 ### GetVolumeScale
 
@@ -133,7 +129,6 @@ and a boolean to check if the value has been set.
 
 SetVolumeScale sets VolumeScale field to given value.
 
-
 ### GetPrePhonemeLength
 
 `func (o *AudioQuery) GetPrePhonemeLength() float32`
@@ -152,7 +147,6 @@ and a boolean to check if the value has been set.
 `func (o *AudioQuery) SetPrePhonemeLength(v float32)`
 
 SetPrePhonemeLength sets PrePhonemeLength field to given value.
-
 
 ### GetPostPhonemeLength
 
@@ -173,7 +167,6 @@ and a boolean to check if the value has been set.
 
 SetPostPhonemeLength sets PostPhonemeLength field to given value.
 
-
 ### GetOutputSamplingRate
 
 `func (o *AudioQuery) GetOutputSamplingRate() int32`
@@ -193,7 +186,6 @@ and a boolean to check if the value has been set.
 
 SetOutputSamplingRate sets OutputSamplingRate field to given value.
 
-
 ### GetOutputStereo
 
 `func (o *AudioQuery) GetOutputStereo() bool`
@@ -212,7 +204,6 @@ and a boolean to check if the value has been set.
 `func (o *AudioQuery) SetOutputStereo(v bool)`
 
 SetOutputStereo sets OutputStereo field to given value.
-
 
 ### GetKana
 
@@ -239,7 +230,4 @@ SetKana sets Kana field to given value.
 
 HasKana returns a boolean if a field has been set.
 
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

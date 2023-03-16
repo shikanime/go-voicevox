@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Text** | **string** |  | 
-**Consonant** | Pointer to **string** |  | [optional] 
-**ConsonantLength** | Pointer to **float32** |  | [optional] 
-**Vowel** | **string** |  | 
-**VowelLength** | **float32** |  | 
-**Pitch** | **float32** |  | 
+**Text** | **string** |  |
+**Consonant** | Pointer to **string** |  | [optional]
+**ConsonantLength** | Pointer to **float32** |  | [optional]
+**Vowel** | **string** |  |
+**VowelLength** | **float32** |  |
+**Pitch** | **float32** |  |
 
 ## Methods
 
@@ -48,7 +48,6 @@ and a boolean to check if the value has been set.
 `func (o *Mora) SetText(v string)`
 
 SetText sets Text field to given value.
-
 
 ### GetConsonant
 
@@ -119,7 +118,6 @@ and a boolean to check if the value has been set.
 
 SetVowel sets Vowel field to given value.
 
-
 ### GetVowelLength
 
 `func (o *Mora) GetVowelLength() float32`
@@ -138,7 +136,6 @@ and a boolean to check if the value has been set.
 `func (o *Mora) SetVowelLength(v float32)`
 
 SetVowelLength sets VowelLength field to given value.
-
 
 ### GetPitch
 
@@ -159,8 +156,4 @@ and a boolean to check if the value has been set.
 
 SetPitch sets Pitch field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

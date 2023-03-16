@@ -1,6 +1,6 @@
 # \AudioLibraryManagementApi
 
-All URIs are relative to *http://localhost:50021*
+All URIs are relative to *<http://localhost:50021>*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,15 +8,11 @@ Method | HTTP request | Description
 [**InstallLibraryInstallLibraryLibraryUuidPost**](AudioLibraryManagementApi.md#InstallLibraryInstallLibraryLibraryUuidPost) | **Post** /install_library/{library_uuid} | Install Library
 [**InstalledLibrariesInstalledLibrariesGet**](AudioLibraryManagementApi.md#InstalledLibrariesInstalledLibrariesGet) | **Get** /installed_libraries | Installed Libraries
 
-
-
 ## DownloadableLibrariesDownloadableLibrariesGet
 
 > []DownloadableLibrary DownloadableLibrariesDownloadableLibrariesGet(ctx).Execute()
 
 Downloadable Libraries
-
-
 
 ### Example
 
@@ -52,7 +48,6 @@ This endpoint does not need any parameter.
 
 Other parameters are passed through a pointer to a apiDownloadableLibrariesDownloadableLibrariesGetRequest struct via the builder pattern
 
-
 ### Return type
 
 [**[]DownloadableLibrary**](DownloadableLibrary.md)
@@ -70,14 +65,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## InstallLibraryInstallLibraryLibraryUuidPost
 
 > InstallLibraryInstallLibraryLibraryUuidPost(ctx, libraryUuid).Execute()
 
 Install Library
-
-
 
 ### Example
 
@@ -106,20 +98,17 @@ func main() {
 
 ### Path Parameters
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-**libraryUuid** | **string** |  | 
+**libraryUuid** | **string** |  |
 
 ### Other Parameters
 
 Other parameters are passed through a pointer to a apiInstallLibraryInstallLibraryLibraryUuidPostRequest struct via the builder pattern
 
-
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
-
 
 ### Return type
 
@@ -138,14 +127,11 @@ No authorization required
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
 
-
 ## InstalledLibrariesInstalledLibrariesGet
 
 > []DownloadableLibrary InstalledLibrariesInstalledLibrariesGet(ctx).Execute()
 
 Installed Libraries
-
-
 
 ### Example
 
@@ -181,7 +167,6 @@ This endpoint does not need any parameter.
 
 Other parameters are passed through a pointer to a apiInstalledLibrariesInstalledLibrariesGetRequest struct via the builder pattern
 
-
 ### Return type
 
 [**[]DownloadableLibrary**](DownloadableLibrary.md)
@@ -198,4 +183,3 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to README]](../README.md)
-

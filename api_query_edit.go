@@ -21,18 +21,18 @@ import (
 type QueryEditApi interface {
 
 	/*
-		AccentPhrasesAccentPhrasesPost テキストからアクセント句を得る
+			AccentPhrasesAccentPhrasesPost テキストからアクセント句を得る
 
-		テキストからアクセント句を得ます。
-	is_kanaが`true`のとき、テキストは次のようなAquesTalkライクな記法に従う読み仮名として処理されます。デフォルトは`false`です。
-	* 全てのカナはカタカナで記述される
-	* アクセント句は`/`または`、`で区切る。`、`で区切った場合に限り無音区間が挿入される。
-	* カナの手前に`_`を入れるとそのカナは無声化される
-	* アクセント位置を`'`で指定する。全てのアクセント句にはアクセント位置を1つ指定する必要がある。
-	* アクセント句末に`？`(全角)を入れることにより疑問文の発音ができる。
+			テキストからアクセント句を得ます。
+		is_kanaが`true`のとき、テキストは次のようなAquesTalkライクな記法に従う読み仮名として処理されます。デフォルトは`false`です。
+		* 全てのカナはカタカナで記述される
+		* アクセント句は`/`または`、`で区切る。`、`で区切った場合に限り無音区間が挿入される。
+		* カナの手前に`_`を入れるとそのカナは無声化される
+		* アクセント位置を`'`で指定する。全てのアクセント句にはアクセント位置を1つ指定する必要がある。
+		* アクセント句末に`？`(全角)を入れることにより疑問文の発音ができる。
 
-		@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-		@return QueryEditApiAccentPhrasesAccentPhrasesPostRequest
+			@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+			@return QueryEditApiAccentPhrasesAccentPhrasesPostRequest
 	*/
 	AccentPhrasesAccentPhrasesPost(ctx context.Context) QueryEditApiAccentPhrasesAccentPhrasesPostRequest
 

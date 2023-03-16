@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Policy** | **string** |  | 
-**Portrait** | **string** |  | 
-**StyleInfos** | [**[]StyleInfo**](StyleInfo.md) |  | 
+**Policy** | **string** |  |
+**Portrait** | **string** |  |
+**StyleInfos** | [**[]StyleInfo**](StyleInfo.md) |  |
 
 ## Methods
 
@@ -46,7 +46,6 @@ and a boolean to check if the value has been set.
 
 SetPolicy sets Policy field to given value.
 
-
 ### GetPortrait
 
 `func (o *SpeakerInfo) GetPortrait() string`
@@ -65,7 +64,6 @@ and a boolean to check if the value has been set.
 `func (o *SpeakerInfo) SetPortrait(v string)`
 
 SetPortrait sets Portrait field to given value.
-
 
 ### GetStyleInfos
 
@@ -86,8 +84,4 @@ and a boolean to check if the value has been set.
 
 SetStyleInfos sets StyleInfos field to given value.
 
-
-
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
-

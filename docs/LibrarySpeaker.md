@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Speaker** | [**LibrarySpeakerSpeaker**](LibrarySpeakerSpeaker.md) |  | 
-**SpeakerInfo** | [**LibrarySpeakerSpeakerInfo**](LibrarySpeakerSpeakerInfo.md) |  | 
+**Speaker** | [**Speaker**](Speaker.md) |  | 
+**SpeakerInfo** | [**SpeakerInfo**](SpeakerInfo.md) |  | 
 
 ## Methods
 
 ### NewLibrarySpeaker
 
-`func NewLibrarySpeaker(speaker LibrarySpeakerSpeaker, speakerInfo LibrarySpeakerSpeakerInfo, ) *LibrarySpeaker`
+`func NewLibrarySpeaker(speaker Speaker, speakerInfo SpeakerInfo, ) *LibrarySpeaker`
 
 NewLibrarySpeaker instantiates a new LibrarySpeaker object
 This constructor will assign default values to properties that have it defined,
@@ -28,40 +28,40 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetSpeaker
 
-`func (o *LibrarySpeaker) GetSpeaker() LibrarySpeakerSpeaker`
+`func (o *LibrarySpeaker) GetSpeaker() Speaker`
 
 GetSpeaker returns the Speaker field if non-nil, zero value otherwise.
 
 ### GetSpeakerOk
 
-`func (o *LibrarySpeaker) GetSpeakerOk() (*LibrarySpeakerSpeaker, bool)`
+`func (o *LibrarySpeaker) GetSpeakerOk() (*Speaker, bool)`
 
 GetSpeakerOk returns a tuple with the Speaker field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSpeaker
 
-`func (o *LibrarySpeaker) SetSpeaker(v LibrarySpeakerSpeaker)`
+`func (o *LibrarySpeaker) SetSpeaker(v Speaker)`
 
 SetSpeaker sets Speaker field to given value.
 
 
 ### GetSpeakerInfo
 
-`func (o *LibrarySpeaker) GetSpeakerInfo() LibrarySpeakerSpeakerInfo`
+`func (o *LibrarySpeaker) GetSpeakerInfo() SpeakerInfo`
 
 GetSpeakerInfo returns the SpeakerInfo field if non-nil, zero value otherwise.
 
 ### GetSpeakerInfoOk
 
-`func (o *LibrarySpeaker) GetSpeakerInfoOk() (*LibrarySpeakerSpeakerInfo, bool)`
+`func (o *LibrarySpeaker) GetSpeakerInfoOk() (*SpeakerInfo, bool)`
 
 GetSpeakerInfoOk returns a tuple with the SpeakerInfo field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSpeakerInfo
 
-`func (o *LibrarySpeaker) SetSpeakerInfo(v LibrarySpeakerSpeakerInfo)`
+`func (o *LibrarySpeaker) SetSpeakerInfo(v SpeakerInfo)`
 
 SetSpeakerInfo sets SpeakerInfo field to given value.
 

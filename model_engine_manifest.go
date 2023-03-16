@@ -19,24 +19,24 @@ var _ MappedNullable = &EngineManifest{}
 
 // EngineManifest エンジン自体に関する情報
 type EngineManifest struct {
-	ManifestVersion     string                          `json:"manifest_version"`
-	Name                string                          `json:"name"`
-	BrandName           string                          `json:"brand_name"`
-	Uuid                string                          `json:"uuid"`
-	Url                 string                          `json:"url"`
-	Icon                string                          `json:"icon"`
-	DefaultSamplingRate int32                           `json:"default_sampling_rate"`
-	TermsOfService      string                          `json:"terms_of_service"`
-	UpdateInfos         []UpdateInfo                    `json:"update_infos"`
-	DependencyLicenses  []LicenseInfo                   `json:"dependency_licenses"`
-	SupportedFeatures   EngineManifestSupportedFeatures `json:"supported_features"`
+	ManifestVersion     string            `json:"manifest_version"`
+	Name                string            `json:"name"`
+	BrandName           string            `json:"brand_name"`
+	Uuid                string            `json:"uuid"`
+	Url                 string            `json:"url"`
+	Icon                string            `json:"icon"`
+	DefaultSamplingRate int32             `json:"default_sampling_rate"`
+	TermsOfService      string            `json:"terms_of_service"`
+	UpdateInfos         []UpdateInfo      `json:"update_infos"`
+	DependencyLicenses  []LicenseInfo     `json:"dependency_licenses"`
+	SupportedFeatures   SupportedFeatures `json:"supported_features"`
 }
 
 // NewEngineManifest instantiates a new EngineManifest object
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewEngineManifest(manifestVersion string, name string, brandName string, uuid string, url string, icon string, defaultSamplingRate int32, termsOfService string, updateInfos []UpdateInfo, dependencyLicenses []LicenseInfo, supportedFeatures EngineManifestSupportedFeatures) *EngineManifest {
+func NewEngineManifest(manifestVersion string, name string, brandName string, uuid string, url string, icon string, defaultSamplingRate int32, termsOfService string, updateInfos []UpdateInfo, dependencyLicenses []LicenseInfo, supportedFeatures SupportedFeatures) *EngineManifest {
 	this := EngineManifest{}
 	this.ManifestVersion = manifestVersion
 	this.Name = name
@@ -301,9 +301,9 @@ func (o *EngineManifest) SetDependencyLicenses(v []LicenseInfo) {
 }
 
 // GetSupportedFeatures returns the SupportedFeatures field value
-func (o *EngineManifest) GetSupportedFeatures() EngineManifestSupportedFeatures {
+func (o *EngineManifest) GetSupportedFeatures() SupportedFeatures {
 	if o == nil {
-		var ret EngineManifestSupportedFeatures
+		var ret SupportedFeatures
 		return ret
 	}
 
@@ -312,7 +312,7 @@ func (o *EngineManifest) GetSupportedFeatures() EngineManifestSupportedFeatures 
 
 // GetSupportedFeaturesOk returns a tuple with the SupportedFeatures field value
 // and a boolean to check if the value has been set.
-func (o *EngineManifest) GetSupportedFeaturesOk() (*EngineManifestSupportedFeatures, bool) {
+func (o *EngineManifest) GetSupportedFeaturesOk() (*SupportedFeatures, bool) {
 	if o == nil {
 		return nil, false
 	}
@@ -320,7 +320,7 @@ func (o *EngineManifest) GetSupportedFeaturesOk() (*EngineManifestSupportedFeatu
 }
 
 // SetSupportedFeatures sets field value
-func (o *EngineManifest) SetSupportedFeatures(v EngineManifestSupportedFeatures) {
+func (o *EngineManifest) SetSupportedFeatures(v SupportedFeatures) {
 	o.SupportedFeatures = v
 }
 

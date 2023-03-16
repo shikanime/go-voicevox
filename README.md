@@ -21,7 +21,7 @@ go get golang.org/x/net/context
 Put the package under your project folder and add the following in import:
 
 ```golang
-import voicevox "github/infinity-blackhole/go-voicevox"
+import voicevox "github.com/infinity-blackhole/go-voicevox"
 ```
 
 To use a proxy, set the environment variable `HTTP_PROXY`:
@@ -73,58 +73,54 @@ ctx = context.WithValue(context.Background(), voicevox.ContextOperationServerVar
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *http://localhost:50021*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**AccentPhrasesAccentPhrasesPost**](docs/DefaultApi.md#accentphrasesaccentphrasespost) | **Post** /accent_phrases | テキストからアクセント句を得る
-*DefaultApi* | [**AddPresetAddPresetPost**](docs/DefaultApi.md#addpresetaddpresetpost) | **Post** /add_preset | Add Preset
-*DefaultApi* | [**AddUserDictWordUserDictWordPost**](docs/DefaultApi.md#adduserdictworduserdictwordpost) | **Post** /user_dict_word | Add User Dict Word
-*DefaultApi* | [**AudioQueryAudioQueryPost**](docs/DefaultApi.md#audioqueryaudioquerypost) | **Post** /audio_query | 音声合成用のクエリを作成する
-*DefaultApi* | [**AudioQueryFromPresetAudioQueryFromPresetPost**](docs/DefaultApi.md#audioqueryfrompresetaudioqueryfrompresetpost) | **Post** /audio_query_from_preset | 音声合成用のクエリをプリセットを用いて作成する
-*DefaultApi* | [**CancellableSynthesisCancellableSynthesisPost**](docs/DefaultApi.md#cancellablesynthesiscancellablesynthesispost) | **Post** /cancellable_synthesis | 音声合成する（キャンセル可能）
-*DefaultApi* | [**ConnectWavesConnectWavesPost**](docs/DefaultApi.md#connectwavesconnectwavespost) | **Post** /connect_waves | base64エンコードされた複数のwavデータを一つに結合する
-*DefaultApi* | [**CoreVersionsCoreVersionsGet**](docs/DefaultApi.md#coreversionscoreversionsget) | **Get** /core_versions | Core Versions
-*DefaultApi* | [**DeletePresetDeletePresetPost**](docs/DefaultApi.md#deletepresetdeletepresetpost) | **Post** /delete_preset | Delete Preset
-*DefaultApi* | [**DeleteUserDictWordUserDictWordWordUuidDelete**](docs/DefaultApi.md#deleteuserdictworduserdictwordworduuiddelete) | **Delete** /user_dict_word/{word_uuid} | Delete User Dict Word
-*DefaultApi* | [**DownloadableLibrariesDownloadableLibrariesGet**](docs/DefaultApi.md#downloadablelibrariesdownloadablelibrariesget) | **Get** /downloadable_libraries | Downloadable Libraries
-*DefaultApi* | [**EngineManifestEngineManifestGet**](docs/DefaultApi.md#enginemanifestenginemanifestget) | **Get** /engine_manifest | Engine Manifest
-*DefaultApi* | [**GetPresetsPresetsGet**](docs/DefaultApi.md#getpresetspresetsget) | **Get** /presets | Get Presets
-*DefaultApi* | [**GetUserDictWordsUserDictGet**](docs/DefaultApi.md#getuserdictwordsuserdictget) | **Get** /user_dict | Get User Dict Words
-*DefaultApi* | [**ImportUserDictWordsImportUserDictPost**](docs/DefaultApi.md#importuserdictwordsimportuserdictpost) | **Post** /import_user_dict | Import User Dict Words
-*DefaultApi* | [**InitializeSpeakerInitializeSpeakerPost**](docs/DefaultApi.md#initializespeakerinitializespeakerpost) | **Post** /initialize_speaker | Initialize Speaker
-*DefaultApi* | [**InstallLibraryInstallLibraryLibraryUuidPost**](docs/DefaultApi.md#installlibraryinstalllibrarylibraryuuidpost) | **Post** /install_library/{library_uuid} | Install Library
-*DefaultApi* | [**InstalledLibrariesInstalledLibrariesGet**](docs/DefaultApi.md#installedlibrariesinstalledlibrariesget) | **Get** /installed_libraries | Installed Libraries
-*DefaultApi* | [**IsInitializedSpeakerIsInitializedSpeakerGet**](docs/DefaultApi.md#isinitializedspeakerisinitializedspeakerget) | **Get** /is_initialized_speaker | Is Initialized Speaker
-*DefaultApi* | [**MoraDataMoraDataPost**](docs/DefaultApi.md#moradatamoradatapost) | **Post** /mora_data | アクセント句から音高・音素長を得る
-*DefaultApi* | [**MoraLengthMoraLengthPost**](docs/DefaultApi.md#moralengthmoralengthpost) | **Post** /mora_length | アクセント句から音素長を得る
-*DefaultApi* | [**MoraPitchMoraPitchPost**](docs/DefaultApi.md#morapitchmorapitchpost) | **Post** /mora_pitch | アクセント句から音高を得る
-*DefaultApi* | [**MorphableTargetsMorphableTargetsPost**](docs/DefaultApi.md#morphabletargetsmorphabletargetspost) | **Post** /morphable_targets | 指定した話者に対してエンジン内の話者がモーフィングが可能か判定する
-*DefaultApi* | [**MultiSynthesisMultiSynthesisPost**](docs/DefaultApi.md#multisynthesismultisynthesispost) | **Post** /multi_synthesis | 複数まとめて音声合成する
-*DefaultApi* | [**RewriteUserDictWordUserDictWordWordUuidPut**](docs/DefaultApi.md#rewriteuserdictworduserdictwordworduuidput) | **Put** /user_dict_word/{word_uuid} | Rewrite User Dict Word
-*DefaultApi* | [**SettingGetSettingGet**](docs/DefaultApi.md#settinggetsettingget) | **Get** /setting | Setting Get
-*DefaultApi* | [**SettingPostSettingPost**](docs/DefaultApi.md#settingpostsettingpost) | **Post** /setting | Setting Post
-*DefaultApi* | [**SpeakerInfoSpeakerInfoGet**](docs/DefaultApi.md#speakerinfospeakerinfoget) | **Get** /speaker_info | Speaker Info
-*DefaultApi* | [**SpeakersSpeakersGet**](docs/DefaultApi.md#speakersspeakersget) | **Get** /speakers | Speakers
-*DefaultApi* | [**SupportedDevicesSupportedDevicesGet**](docs/DefaultApi.md#supporteddevicessupporteddevicesget) | **Get** /supported_devices | Supported Devices
-*DefaultApi* | [**SynthesisMorphingSynthesisMorphingPost**](docs/DefaultApi.md#synthesismorphingsynthesismorphingpost) | **Post** /synthesis_morphing | 2人の話者でモーフィングした音声を合成する
-*DefaultApi* | [**SynthesisSynthesisPost**](docs/DefaultApi.md#synthesissynthesispost) | **Post** /synthesis | 音声合成する
-*DefaultApi* | [**UpdatePresetUpdatePresetPost**](docs/DefaultApi.md#updatepresetupdatepresetpost) | **Post** /update_preset | Update Preset
-*DefaultApi* | [**VersionVersionGet**](docs/DefaultApi.md#versionversionget) | **Get** /version | Version
+*AudioLibraryManagementApi* | [**DownloadableLibrariesDownloadableLibrariesGet**](docs/AudioLibraryManagementApi.md#downloadablelibrariesdownloadablelibrariesget) | **Get** /downloadable_libraries | Downloadable Libraries
+*AudioLibraryManagementApi* | [**InstallLibraryInstallLibraryLibraryUuidPost**](docs/AudioLibraryManagementApi.md#installlibraryinstalllibrarylibraryuuidpost) | **Post** /install_library/{library_uuid} | Install Library
+*AudioLibraryManagementApi* | [**InstalledLibrariesInstalledLibrariesGet**](docs/AudioLibraryManagementApi.md#installedlibrariesinstalledlibrariesget) | **Get** /installed_libraries | Installed Libraries
+*OtherApi* | [**AddPresetAddPresetPost**](docs/OtherApi.md#addpresetaddpresetpost) | **Post** /add_preset | Add Preset
+*OtherApi* | [**ConnectWavesConnectWavesPost**](docs/OtherApi.md#connectwavesconnectwavespost) | **Post** /connect_waves | base64エンコードされた複数のwavデータを一つに結合する
+*OtherApi* | [**CoreVersionsCoreVersionsGet**](docs/OtherApi.md#coreversionscoreversionsget) | **Get** /core_versions | Core Versions
+*OtherApi* | [**DeletePresetDeletePresetPost**](docs/OtherApi.md#deletepresetdeletepresetpost) | **Post** /delete_preset | Delete Preset
+*OtherApi* | [**EngineManifestEngineManifestGet**](docs/OtherApi.md#enginemanifestenginemanifestget) | **Get** /engine_manifest | Engine Manifest
+*OtherApi* | [**GetPresetsPresetsGet**](docs/OtherApi.md#getpresetspresetsget) | **Get** /presets | Get Presets
+*OtherApi* | [**InitializeSpeakerInitializeSpeakerPost**](docs/OtherApi.md#initializespeakerinitializespeakerpost) | **Post** /initialize_speaker | Initialize Speaker
+*OtherApi* | [**IsInitializedSpeakerIsInitializedSpeakerGet**](docs/OtherApi.md#isinitializedspeakerisinitializedspeakerget) | **Get** /is_initialized_speaker | Is Initialized Speaker
+*OtherApi* | [**SpeakerInfoSpeakerInfoGet**](docs/OtherApi.md#speakerinfospeakerinfoget) | **Get** /speaker_info | Speaker Info
+*OtherApi* | [**SpeakersSpeakersGet**](docs/OtherApi.md#speakersspeakersget) | **Get** /speakers | Speakers
+*OtherApi* | [**SupportedDevicesSupportedDevicesGet**](docs/OtherApi.md#supporteddevicessupporteddevicesget) | **Get** /supported_devices | Supported Devices
+*OtherApi* | [**UpdatePresetUpdatePresetPost**](docs/OtherApi.md#updatepresetupdatepresetpost) | **Post** /update_preset | Update Preset
+*OtherApi* | [**VersionVersionGet**](docs/OtherApi.md#versionversionget) | **Get** /version | Version
+*QueryCreationApi* | [**AudioQueryAudioQueryPost**](docs/QueryCreationApi.md#audioqueryaudioquerypost) | **Post** /audio_query | 音声合成用のクエリを作成する
+*QueryCreationApi* | [**AudioQueryFromPresetAudioQueryFromPresetPost**](docs/QueryCreationApi.md#audioqueryfrompresetaudioqueryfrompresetpost) | **Post** /audio_query_from_preset | 音声合成用のクエリをプリセットを用いて作成する
+*QueryEditApi* | [**AccentPhrasesAccentPhrasesPost**](docs/QueryEditApi.md#accentphrasesaccentphrasespost) | **Post** /accent_phrases | テキストからアクセント句を得る
+*QueryEditApi* | [**MoraDataMoraDataPost**](docs/QueryEditApi.md#moradatamoradatapost) | **Post** /mora_data | アクセント句から音高・音素長を得る
+*QueryEditApi* | [**MoraLengthMoraLengthPost**](docs/QueryEditApi.md#moralengthmoralengthpost) | **Post** /mora_length | アクセント句から音素長を得る
+*QueryEditApi* | [**MoraPitchMoraPitchPost**](docs/QueryEditApi.md#morapitchmorapitchpost) | **Post** /mora_pitch | アクセント句から音高を得る
+*SettingApi* | [**SettingGetSettingGet**](docs/SettingApi.md#settinggetsettingget) | **Get** /setting | Setting Get
+*SettingApi* | [**SettingPostSettingPost**](docs/SettingApi.md#settingpostsettingpost) | **Post** /setting | Setting Post
+*SpeechSynthesisApi* | [**CancellableSynthesisCancellableSynthesisPost**](docs/SpeechSynthesisApi.md#cancellablesynthesiscancellablesynthesispost) | **Post** /cancellable_synthesis | 音声合成する（キャンセル可能）
+*SpeechSynthesisApi* | [**MorphableTargetsMorphableTargetsPost**](docs/SpeechSynthesisApi.md#morphabletargetsmorphabletargetspost) | **Post** /morphable_targets | 指定した話者に対してエンジン内の話者がモーフィングが可能か判定する
+*SpeechSynthesisApi* | [**MultiSynthesisMultiSynthesisPost**](docs/SpeechSynthesisApi.md#multisynthesismultisynthesispost) | **Post** /multi_synthesis | 複数まとめて音声合成する
+*SpeechSynthesisApi* | [**SynthesisMorphingSynthesisMorphingPost**](docs/SpeechSynthesisApi.md#synthesismorphingsynthesismorphingpost) | **Post** /synthesis_morphing | 2人の話者でモーフィングした音声を合成する
+*SpeechSynthesisApi* | [**SynthesisSynthesisPost**](docs/SpeechSynthesisApi.md#synthesissynthesispost) | **Post** /synthesis | 音声合成する
+*UserDictionaryApi* | [**AddUserDictWordUserDictWordPost**](docs/UserDictionaryApi.md#adduserdictworduserdictwordpost) | **Post** /user_dict_word | Add User Dict Word
+*UserDictionaryApi* | [**DeleteUserDictWordUserDictWordWordUuidDelete**](docs/UserDictionaryApi.md#deleteuserdictworduserdictwordworduuiddelete) | **Delete** /user_dict_word/{word_uuid} | Delete User Dict Word
+*UserDictionaryApi* | [**GetUserDictWordsUserDictGet**](docs/UserDictionaryApi.md#getuserdictwordsuserdictget) | **Get** /user_dict | Get User Dict Words
+*UserDictionaryApi* | [**ImportUserDictWordsImportUserDictPost**](docs/UserDictionaryApi.md#importuserdictwordsimportuserdictpost) | **Post** /import_user_dict | Import User Dict Words
+*UserDictionaryApi* | [**RewriteUserDictWordUserDictWordWordUuidPut**](docs/UserDictionaryApi.md#rewriteuserdictworduserdictwordworduuidput) | **Put** /user_dict_word/{word_uuid} | Rewrite User Dict Word
 
 
 ## Documentation For Models
 
  - [AccentPhrase](docs/AccentPhrase.md)
- - [AccentPhrasePauseMora](docs/AccentPhrasePauseMora.md)
  - [AudioQuery](docs/AudioQuery.md)
  - [DownloadableLibrary](docs/DownloadableLibrary.md)
  - [EngineManifest](docs/EngineManifest.md)
- - [EngineManifestSupportedFeatures](docs/EngineManifestSupportedFeatures.md)
  - [HTTPValidationError](docs/HTTPValidationError.md)
  - [LibrarySpeaker](docs/LibrarySpeaker.md)
- - [LibrarySpeakerSpeaker](docs/LibrarySpeakerSpeaker.md)
- - [LibrarySpeakerSpeakerInfo](docs/LibrarySpeakerSpeakerInfo.md)
  - [LicenseInfo](docs/LicenseInfo.md)
  - [Mora](docs/Mora.md)
  - [MorphableTargetInfo](docs/MorphableTargetInfo.md)

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Moras** | [**[]Mora**](Mora.md) |  | 
 **Accent** | **int32** |  | 
-**PauseMora** | Pointer to [**AccentPhrasePauseMora**](AccentPhrasePauseMora.md) |  | [optional] 
+**PauseMora** | Pointer to [**Mora**](Mora.md) |  | [optional] 
 **IsInterrogative** | Pointer to **bool** |  | [optional] [default to false]
 
 ## Methods
@@ -70,20 +70,20 @@ SetAccent sets Accent field to given value.
 
 ### GetPauseMora
 
-`func (o *AccentPhrase) GetPauseMora() AccentPhrasePauseMora`
+`func (o *AccentPhrase) GetPauseMora() Mora`
 
 GetPauseMora returns the PauseMora field if non-nil, zero value otherwise.
 
 ### GetPauseMoraOk
 
-`func (o *AccentPhrase) GetPauseMoraOk() (*AccentPhrasePauseMora, bool)`
+`func (o *AccentPhrase) GetPauseMoraOk() (*Mora, bool)`
 
 GetPauseMoraOk returns a tuple with the PauseMora field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPauseMora
 
-`func (o *AccentPhrase) SetPauseMora(v AccentPhrasePauseMora)`
+`func (o *AccentPhrase) SetPauseMora(v Mora)`
 
 SetPauseMora sets PauseMora field to given value.
 

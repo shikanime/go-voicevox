@@ -4,7 +4,22 @@ info:
   title: VOICEVOX Engine
   version: latest
 servers:
-- url: /
+- url: http://localhost:50021
+tags:
+- description: 音声合成用のクエリを作成する
+  name: query creation
+- description: 音声合成用のクエリを編集する
+  name: query edit
+- description: 音声合成を行う
+  name: speech synthesis
+- description: その他のAPI
+  name: other
+- description: 音声ライブラリの管理を行う
+  name: audio library management
+- description: ユーザー辞書の管理を行う
+  name: user dictionary
+- description: 設定を行う
+  name: setting
 paths:
   /audio_query:
     post:
@@ -16,6 +31,7 @@ paths:
         name: text
         required: true
         schema:
+          title: Text
           type: string
         style: form
       - explode: true
@@ -23,6 +39,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - explode: true
@@ -30,6 +47,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       responses:
@@ -47,7 +65,7 @@ paths:
           description: Validation Error
       summary: 音声合成用のクエリを作成する
       tags:
-      - クエリ作成
+      - query creation
   /audio_query_from_preset:
     post:
       description: クエリの初期値を得ます。ここで得られたクエリはそのまま音声合成に利用できます。各値の意味は`Schemas`を参照してください。
@@ -58,6 +76,7 @@ paths:
         name: text
         required: true
         schema:
+          title: Text
           type: string
         style: form
       - explode: true
@@ -65,6 +84,7 @@ paths:
         name: preset_id
         required: true
         schema:
+          title: Preset Id
           type: integer
         style: form
       - explode: true
@@ -72,6 +92,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       responses:
@@ -89,7 +110,7 @@ paths:
           description: Validation Error
       summary: 音声合成用のクエリをプリセットを用いて作成する
       tags:
-      - クエリ作成
+      - query creation
   /accent_phrases:
     post:
       description: |-
@@ -107,6 +128,7 @@ paths:
         name: text
         required: true
         schema:
+          title: Text
           type: string
         style: form
       - explode: true
@@ -114,6 +136,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - explode: true
@@ -122,6 +145,7 @@ paths:
         required: false
         schema:
           default: false
+          title: Is Kana
           type: boolean
         style: form
       - explode: true
@@ -129,6 +153,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       responses:
@@ -138,6 +163,7 @@ paths:
               schema:
                 items:
                   $ref: '#/components/schemas/AccentPhrase'
+                title: Response Accent Phrases Accent Phrases Post
                 type: array
           description: Successful Response
         "400":
@@ -154,7 +180,7 @@ paths:
           description: Validation Error
       summary: テキストからアクセント句を得る
       tags:
-      - クエリ編集
+      - query edit
   /mora_data:
     post:
       operationId: mora_data_mora_data_post
@@ -164,6 +190,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - explode: true
@@ -171,6 +198,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       requestBody:
@@ -179,6 +207,7 @@ paths:
             schema:
               items:
                 $ref: '#/components/schemas/AccentPhrase'
+              title: Accent Phrases
               type: array
         required: true
       responses:
@@ -188,6 +217,7 @@ paths:
               schema:
                 items:
                   $ref: '#/components/schemas/AccentPhrase'
+                title: Response Mora Data Mora Data Post
                 type: array
           description: Successful Response
         "422":
@@ -198,7 +228,7 @@ paths:
           description: Validation Error
       summary: アクセント句から音高・音素長を得る
       tags:
-      - クエリ編集
+      - query edit
   /mora_length:
     post:
       operationId: mora_length_mora_length_post
@@ -208,6 +238,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - explode: true
@@ -215,6 +246,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       requestBody:
@@ -223,6 +255,7 @@ paths:
             schema:
               items:
                 $ref: '#/components/schemas/AccentPhrase'
+              title: Accent Phrases
               type: array
         required: true
       responses:
@@ -232,6 +265,7 @@ paths:
               schema:
                 items:
                   $ref: '#/components/schemas/AccentPhrase'
+                title: Response Mora Length Mora Length Post
                 type: array
           description: Successful Response
         "422":
@@ -242,7 +276,7 @@ paths:
           description: Validation Error
       summary: アクセント句から音素長を得る
       tags:
-      - クエリ編集
+      - query edit
   /mora_pitch:
     post:
       operationId: mora_pitch_mora_pitch_post
@@ -252,6 +286,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - explode: true
@@ -259,6 +294,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       requestBody:
@@ -267,6 +303,7 @@ paths:
             schema:
               items:
                 $ref: '#/components/schemas/AccentPhrase'
+              title: Accent Phrases
               type: array
         required: true
       responses:
@@ -276,6 +313,7 @@ paths:
               schema:
                 items:
                   $ref: '#/components/schemas/AccentPhrase'
+                title: Response Mora Pitch Mora Pitch Post
                 type: array
           description: Successful Response
         "422":
@@ -286,7 +324,7 @@ paths:
           description: Validation Error
       summary: アクセント句から音高を得る
       tags:
-      - クエリ編集
+      - query edit
   /synthesis:
     post:
       operationId: synthesis_synthesis_post
@@ -296,6 +334,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - description: 疑問系のテキストが与えられたら語尾を自動調整する
@@ -306,6 +345,7 @@ paths:
         schema:
           default: true
           description: 疑問系のテキストが与えられたら語尾を自動調整する
+          title: Enable Interrogative Upspeak
           type: boolean
         style: form
       - explode: true
@@ -313,6 +353,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       requestBody:
@@ -337,7 +378,7 @@ paths:
           description: Validation Error
       summary: 音声合成する
       tags:
-      - 音声合成
+      - speech synthesis
   /cancellable_synthesis:
     post:
       operationId: cancellable_synthesis_cancellable_synthesis_post
@@ -347,6 +388,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - explode: true
@@ -354,6 +396,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       requestBody:
@@ -378,7 +421,7 @@ paths:
           description: Validation Error
       summary: 音声合成する（キャンセル可能）
       tags:
-      - 音声合成
+      - speech synthesis
   /multi_synthesis:
     post:
       operationId: multi_synthesis_multi_synthesis_post
@@ -388,6 +431,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - explode: true
@@ -395,6 +439,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       requestBody:
@@ -403,6 +448,7 @@ paths:
             schema:
               items:
                 $ref: '#/components/schemas/AudioQuery'
+              title: Queries
               type: array
         required: true
       responses:
@@ -421,7 +467,7 @@ paths:
           description: Validation Error
       summary: 複数まとめて音声合成する
       tags:
-      - 音声合成
+      - speech synthesis
   /morphable_targets:
     post:
       description: |-
@@ -436,6 +482,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       requestBody:
@@ -444,6 +491,7 @@ paths:
             schema:
               items:
                 type: integer
+              title: Base Speakers
               type: array
         required: true
       responses:
@@ -455,6 +503,7 @@ paths:
                   additionalProperties:
                     $ref: '#/components/schemas/MorphableTargetInfo'
                   type: object
+                title: Response Morphable Targets Morphable Targets Post
                 type: array
           description: Successful Response
         "422":
@@ -465,7 +514,7 @@ paths:
           description: Validation Error
       summary: 指定した話者に対してエンジン内の話者がモーフィングが可能か判定する
       tags:
-      - 音声合成
+      - speech synthesis
   /synthesis_morphing:
     post:
       description: |-
@@ -478,6 +527,7 @@ paths:
         name: base_speaker
         required: true
         schema:
+          title: Base Speaker
           type: integer
         style: form
       - explode: true
@@ -485,6 +535,7 @@ paths:
         name: target_speaker
         required: true
         schema:
+          title: Target Speaker
           type: integer
         style: form
       - explode: true
@@ -494,6 +545,7 @@ paths:
         schema:
           maximum: 1
           minimum: 0
+          title: Morph Rate
           type: number
         style: form
       - explode: true
@@ -501,6 +553,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       requestBody:
@@ -525,7 +578,7 @@ paths:
           description: Validation Error
       summary: 2人の話者でモーフィングした音声を合成する
       tags:
-      - 音声合成
+      - speech synthesis
   /connect_waves:
     post:
       description: base64エンコードされたwavデータを一纏めにし、wavファイルで返します。
@@ -536,6 +589,7 @@ paths:
             schema:
               items:
                 type: string
+              title: Waves
               type: array
         required: true
       responses:
@@ -554,7 +608,7 @@ paths:
           description: Validation Error
       summary: base64エンコードされた複数のwavデータを一つに結合する
       tags:
-      - その他
+      - other
   /presets:
     get:
       description: |-
@@ -572,11 +626,12 @@ paths:
               schema:
                 items:
                   $ref: '#/components/schemas/Preset'
+                title: Response Get Presets Presets Get
                 type: array
           description: Successful Response
       summary: Get Presets
       tags:
-      - その他
+      - other
   /add_preset:
     post:
       description: |-
@@ -604,6 +659,7 @@ paths:
           content:
             application/json:
               schema:
+                title: Response Add Preset Add Preset Post
                 type: integer
           description: Successful Response
         "422":
@@ -614,7 +670,7 @@ paths:
           description: Validation Error
       summary: Add Preset
       tags:
-      - その他
+      - other
   /update_preset:
     post:
       description: |-
@@ -642,6 +698,7 @@ paths:
           content:
             application/json:
               schema:
+                title: Response Update Preset Update Preset Post
                 type: integer
           description: Successful Response
         "422":
@@ -652,7 +709,7 @@ paths:
           description: Validation Error
       summary: Update Preset
       tags:
-      - その他
+      - other
   /delete_preset:
     post:
       description: |-
@@ -669,6 +726,7 @@ paths:
         name: id
         required: true
         schema:
+          title: Id
           type: integer
         style: form
       responses:
@@ -682,7 +740,7 @@ paths:
           description: Validation Error
       summary: Delete Preset
       tags:
-      - その他
+      - other
   /version:
     get:
       operationId: version_version_get
@@ -694,7 +752,7 @@ paths:
           description: Successful Response
       summary: Version
       tags:
-      - その他
+      - other
   /core_versions:
     get:
       operationId: core_versions_core_versions_get
@@ -705,11 +763,12 @@ paths:
               schema:
                 items:
                   type: string
+                title: Response Core Versions Core Versions Get
                 type: array
           description: Successful Response
       summary: Core Versions
       tags:
-      - その他
+      - other
   /speakers:
     get:
       operationId: speakers_speakers_get
@@ -719,6 +778,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       responses:
@@ -728,6 +788,7 @@ paths:
               schema:
                 items:
                   $ref: '#/components/schemas/Speaker'
+                title: Response Speakers Speakers Get
                 type: array
           description: Successful Response
         "422":
@@ -738,7 +799,7 @@ paths:
           description: Validation Error
       summary: Speakers
       tags:
-      - その他
+      - other
   /speaker_info:
     get:
       description: |-
@@ -755,6 +816,7 @@ paths:
         name: speaker_uuid
         required: true
         schema:
+          title: Speaker Uuid
           type: string
         style: form
       - explode: true
@@ -762,6 +824,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       responses:
@@ -779,7 +842,7 @@ paths:
           description: Validation Error
       summary: Speaker Info
       tags:
-      - その他
+      - other
   /downloadable_libraries:
     get:
       description: |-
@@ -796,11 +859,12 @@ paths:
               schema:
                 items:
                   $ref: '#/components/schemas/DownloadableLibrary'
+                title: Response Downloadable Libraries Downloadable Libraries Get
                 type: array
           description: Successful Response
       summary: Downloadable Libraries
       tags:
-      - 音声ライブラリ管理
+      - audio library management
   /installed_libraries:
     get:
       description: |-
@@ -817,11 +881,12 @@ paths:
               schema:
                 items:
                   $ref: '#/components/schemas/DownloadableLibrary'
+                title: Response Installed Libraries Installed Libraries Get
                 type: array
           description: Successful Response
       summary: Installed Libraries
       tags:
-      - 音声ライブラリ管理
+      - audio library management
   /install_library/{library_uuid}:
     post:
       description: |-
@@ -839,6 +904,7 @@ paths:
         name: library_uuid
         required: true
         schema:
+          title: Library Uuid
           type: string
         style: simple
       responses:
@@ -852,7 +918,7 @@ paths:
           description: Validation Error
       summary: Install Library
       tags:
-      - 音声ライブラリ管理
+      - audio library management
   /initialize_speaker:
     post:
       description: |-
@@ -865,6 +931,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - description: 既に初期化済みの話者の再初期化をスキップするかどうか
@@ -875,6 +942,7 @@ paths:
         schema:
           default: false
           description: 既に初期化済みの話者の再初期化をスキップするかどうか
+          title: Skip Reinit
           type: boolean
         style: form
       - explode: true
@@ -882,6 +950,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       responses:
@@ -895,7 +964,7 @@ paths:
           description: Validation Error
       summary: Initialize Speaker
       tags:
-      - その他
+      - other
   /is_initialized_speaker:
     get:
       description: 指定されたspeaker_idの話者が初期化されているかどうかを返します。
@@ -906,6 +975,7 @@ paths:
         name: speaker
         required: true
         schema:
+          title: Speaker
           type: integer
         style: form
       - explode: true
@@ -913,6 +983,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       responses:
@@ -920,6 +991,7 @@ paths:
           content:
             application/json:
               schema:
+                title: Response Is Initialized Speaker Is Initialized Speaker Get
                 type: boolean
           description: Successful Response
         "422":
@@ -930,7 +1002,7 @@ paths:
           description: Validation Error
       summary: Is Initialized Speaker
       tags:
-      - その他
+      - other
   /user_dict:
     get:
       description: |-
@@ -949,11 +1021,12 @@ paths:
               schema:
                 additionalProperties:
                   $ref: '#/components/schemas/UserDictWord'
+                title: Response Get User Dict Words User Dict Get
                 type: object
           description: Successful Response
       summary: Get User Dict Words
       tags:
-      - ユーザー辞書
+      - user dictionary
   /user_dict_word:
     post:
       description: |-
@@ -980,6 +1053,7 @@ paths:
         name: surface
         required: true
         schema:
+          title: Surface
           type: string
         style: form
       - explode: true
@@ -987,6 +1061,7 @@ paths:
         name: pronunciation
         required: true
         schema:
+          title: Pronunciation
           type: string
         style: form
       - explode: true
@@ -994,6 +1069,7 @@ paths:
         name: accent_type
         required: true
         schema:
+          title: Accent Type
           type: integer
         style: form
       - explode: true
@@ -1010,6 +1086,7 @@ paths:
         schema:
           maximum: 10
           minimum: 0
+          title: Priority
           type: integer
         style: form
       responses:
@@ -1017,6 +1094,7 @@ paths:
           content:
             application/json:
               schema:
+                title: Response Add User Dict Word User Dict Word Post
                 type: string
           description: Successful Response
         "422":
@@ -1027,7 +1105,7 @@ paths:
           description: Validation Error
       summary: Add User Dict Word
       tags:
-      - ユーザー辞書
+      - user dictionary
   /user_dict_word/{word_uuid}:
     delete:
       description: |-
@@ -1044,6 +1122,7 @@ paths:
         name: word_uuid
         required: true
         schema:
+          title: Word Uuid
           type: string
         style: simple
       responses:
@@ -1057,7 +1136,7 @@ paths:
           description: Validation Error
       summary: Delete User Dict Word
       tags:
-      - ユーザー辞書
+      - user dictionary
     put:
       description: |-
         ユーザー辞書に登録されている言葉を更新します。
@@ -1085,6 +1164,7 @@ paths:
         name: word_uuid
         required: true
         schema:
+          title: Word Uuid
           type: string
         style: simple
       - explode: true
@@ -1092,6 +1172,7 @@ paths:
         name: surface
         required: true
         schema:
+          title: Surface
           type: string
         style: form
       - explode: true
@@ -1099,6 +1180,7 @@ paths:
         name: pronunciation
         required: true
         schema:
+          title: Pronunciation
           type: string
         style: form
       - explode: true
@@ -1106,6 +1188,7 @@ paths:
         name: accent_type
         required: true
         schema:
+          title: Accent Type
           type: integer
         style: form
       - explode: true
@@ -1122,6 +1205,7 @@ paths:
         schema:
           maximum: 10
           minimum: 0
+          title: Priority
           type: integer
         style: form
       responses:
@@ -1135,7 +1219,7 @@ paths:
           description: Validation Error
       summary: Rewrite User Dict Word
       tags:
-      - ユーザー辞書
+      - user dictionary
   /import_user_dict:
     post:
       description: |-
@@ -1154,6 +1238,7 @@ paths:
         name: override
         required: true
         schema:
+          title: Override
           type: boolean
         style: form
       requestBody:
@@ -1162,6 +1247,7 @@ paths:
             schema:
               additionalProperties:
                 $ref: '#/components/schemas/UserDictWord'
+              title: Import Dict Data
               type: object
         required: true
       responses:
@@ -1175,7 +1261,7 @@ paths:
           description: Validation Error
       summary: Import User Dict Words
       tags:
-      - ユーザー辞書
+      - user dictionary
   /supported_devices:
     get:
       operationId: supported_devices_supported_devices_get
@@ -1185,6 +1271,7 @@ paths:
         name: core_version
         required: false
         schema:
+          title: Core Version
           type: string
         style: form
       responses:
@@ -1202,7 +1289,7 @@ paths:
           description: Validation Error
       summary: Supported Devices
       tags:
-      - その他
+      - other
   /engine_manifest:
     get:
       operationId: engine_manifest_engine_manifest_get
@@ -1215,7 +1302,7 @@ paths:
           description: Successful Response
       summary: Engine Manifest
       tags:
-      - その他
+      - other
   /setting:
     get:
       operationId: setting_get_setting_get
@@ -1228,7 +1315,7 @@ paths:
           description: Successful Response
       summary: Setting Get
       tags:
-      - 設定
+      - setting
     post:
       operationId: setting_post_setting_post
       requestBody:
@@ -1251,7 +1338,7 @@ paths:
           description: Validation Error
       summary: Setting Post
       tags:
-      - 設定
+      - setting
 components:
   schemas:
     AccentPhrase:
@@ -1271,7 +1358,13 @@ components:
           pitch: 1.4658129805029452
           consonant_length: 0.8008281904610115
           vowel_length: 6.027456183070403
-        pause_mora: null
+        pause_mora:
+          consonant: consonant
+          vowel: vowel
+          text: text
+          pitch: 1.4658129805029452
+          consonant_length: 0.8008281904610115
+          vowel_length: 6.027456183070403
         accent: 5
       properties:
         moras:
@@ -1281,7 +1374,7 @@ components:
         accent:
           type: integer
         pause_mora:
-          $ref: '#/components/schemas/AccentPhrase_pause_mora'
+          $ref: '#/components/schemas/Mora'
         is_interrogative:
           default: false
           type: boolean
@@ -1313,7 +1406,13 @@ components:
             pitch: 1.4658129805029452
             consonant_length: 0.8008281904610115
             vowel_length: 6.027456183070403
-          pause_mora: null
+          pause_mora:
+            consonant: consonant
+            vowel: vowel
+            text: text
+            pitch: 1.4658129805029452
+            consonant_length: 0.8008281904610115
+            vowel_length: 6.027456183070403
           accent: 5
         - is_interrogative: false
           moras:
@@ -1329,7 +1428,13 @@ components:
             pitch: 1.4658129805029452
             consonant_length: 0.8008281904610115
             vowel_length: 6.027456183070403
-          pause_mora: null
+          pause_mora:
+            consonant: consonant
+            vowel: vowel
+            text: text
+            pitch: 1.4658129805029452
+            consonant_length: 0.8008281904610115
+            vowel_length: 6.027456183070403
           accent: 5
         speedScale: 5.637376656633329
         outputStereo: true
@@ -1380,10 +1485,60 @@ components:
       example:
         bytes: 0
         speakers:
-        - speaker_info: null
-          speaker: null
-        - speaker_info: null
-          speaker: null
+        - speaker_info:
+            style_infos:
+            - icon: icon
+              voice_samples:
+              - voice_samples
+              - voice_samples
+              id: 0
+              portrait: portrait
+            - icon: icon
+              voice_samples:
+              - voice_samples
+              - voice_samples
+              id: 0
+              portrait: portrait
+            portrait: portrait
+            policy: policy
+          speaker:
+            supported_features:
+              permitted_synthesis_morphing: ""
+            name: name
+            styles:
+            - name: name
+              id: 0
+            - name: name
+              id: 0
+            speaker_uuid: speaker_uuid
+            version: スピーカーのバージョン
+        - speaker_info:
+            style_infos:
+            - icon: icon
+              voice_samples:
+              - voice_samples
+              - voice_samples
+              id: 0
+              portrait: portrait
+            - icon: icon
+              voice_samples:
+              - voice_samples
+              - voice_samples
+              id: 0
+              portrait: portrait
+            portrait: portrait
+            policy: policy
+          speaker:
+            supported_features:
+              permitted_synthesis_morphing: ""
+            name: name
+            styles:
+            - name: name
+              id: 0
+            - name: name
+              id: 0
+            speaker_uuid: speaker_uuid
+            version: スピーカーのバージョン
         name: name
         download_url: download_url
         uuid: uuid
@@ -1424,7 +1579,16 @@ components:
           text: text
           version: version
         terms_of_service: terms_of_service
-        supported_features: null
+        supported_features:
+          adjust_intonation_scale: true
+          adjust_mora_pitch: true
+          interrogative_upspeak: true
+          manage_library: true
+          adjust_phoneme_length: true
+          synthesis_morphing: true
+          adjust_volume_scale: true
+          adjust_speed_scale: true
+          adjust_pitch_scale: true
         manifest_version: manifest_version
         name: name
         icon: icon
@@ -1473,7 +1637,7 @@ components:
             $ref: '#/components/schemas/LicenseInfo'
           type: array
         supported_features:
-          $ref: '#/components/schemas/EngineManifest_supported_features'
+          $ref: '#/components/schemas/SupportedFeatures'
       required:
       - brand_name
       - default_sampling_rate
@@ -1497,13 +1661,38 @@ components:
     LibrarySpeaker:
       description: 音声ライブラリに含まれる話者の情報
       example:
-        speaker_info: null
-        speaker: null
+        speaker_info:
+          style_infos:
+          - icon: icon
+            voice_samples:
+            - voice_samples
+            - voice_samples
+            id: 0
+            portrait: portrait
+          - icon: icon
+            voice_samples:
+            - voice_samples
+            - voice_samples
+            id: 0
+            portrait: portrait
+          portrait: portrait
+          policy: policy
+        speaker:
+          supported_features:
+            permitted_synthesis_morphing: ""
+          name: name
+          styles:
+          - name: name
+            id: 0
+          - name: name
+            id: 0
+          speaker_uuid: speaker_uuid
+          version: スピーカーのバージョン
       properties:
         speaker:
-          $ref: '#/components/schemas/LibrarySpeaker_speaker'
+          $ref: '#/components/schemas/Speaker'
         speaker_info:
-          $ref: '#/components/schemas/LibrarySpeaker_speaker_info'
+          $ref: '#/components/schemas/SpeakerInfo'
       required:
       - speaker
       - speaker_info
@@ -1639,7 +1828,8 @@ components:
     Speaker:
       description: スピーカー情報
       example:
-        supported_features: null
+        supported_features:
+          permitted_synthesis_morphing: ""
         name: name
         styles:
         - name: name
@@ -1650,7 +1840,7 @@ components:
         version: スピーカーのバージョン
       properties:
         supported_features:
-          $ref: '#/components/schemas/Speaker_supported_features'
+          $ref: '#/components/schemas/SpeakerSupportedFeatures'
         name:
           type: string
         speaker_uuid:
@@ -1722,6 +1912,8 @@ components:
       type: string
     SpeakerSupportedFeatures:
       description: 話者の対応機能の情報
+      example:
+        permitted_synthesis_morphing: ""
       properties:
         permitted_synthesis_morphing:
           allOf:
@@ -1773,6 +1965,16 @@ components:
       type: object
     SupportedFeatures:
       description: エンジンが持つ機能の一覧
+      example:
+        adjust_intonation_scale: true
+        adjust_mora_pitch: true
+        interrogative_upspeak: true
+        manage_library: true
+        adjust_phoneme_length: true
+        synthesis_morphing: true
+        adjust_volume_scale: true
+        adjust_speed_scale: true
+        adjust_pitch_scale: true
       properties:
         adjust_mora_pitch:
           type: boolean
@@ -1919,18 +2121,3 @@ components:
       - ADJECTIVE
       - SUFFIX
       type: string
-    AccentPhrase_pause_mora:
-      allOf:
-      - $ref: '#/components/schemas/Mora'
-    EngineManifest_supported_features:
-      allOf:
-      - $ref: '#/components/schemas/SupportedFeatures'
-    LibrarySpeaker_speaker:
-      allOf:
-      - $ref: '#/components/schemas/Speaker'
-    LibrarySpeaker_speaker_info:
-      allOf:
-      - $ref: '#/components/schemas/SpeakerInfo'
-    Speaker_supported_features:
-      allOf:
-      - $ref: '#/components/schemas/SpeakerSupportedFeatures'

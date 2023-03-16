@@ -17,7 +17,7 @@ import (
 // checks if the SpeakerSupportedFeatures type satisfies the MappedNullable interface at compile time
 var _ MappedNullable = &SpeakerSupportedFeatures{}
 
-// SpeakerSupportedFeatures struct for SpeakerSupportedFeatures
+// SpeakerSupportedFeatures 話者の対応機能の情報
 type SpeakerSupportedFeatures struct {
 	PermittedSynthesisMorphing *SpeakerSupportPermittedSynthesisMorphing `json:"permitted_synthesis_morphing,omitempty"`
 }

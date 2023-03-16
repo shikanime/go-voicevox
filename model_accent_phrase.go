@@ -19,10 +19,10 @@ var _ MappedNullable = &AccentPhrase{}
 
 // AccentPhrase アクセント句ごとの情報
 type AccentPhrase struct {
-	Moras           []Mora                 `json:"moras"`
-	Accent          int32                  `json:"accent"`
-	PauseMora       *AccentPhrasePauseMora `json:"pause_mora,omitempty"`
-	IsInterrogative *bool                  `json:"is_interrogative,omitempty"`
+	Moras           []Mora `json:"moras"`
+	Accent          int32  `json:"accent"`
+	PauseMora       *Mora  `json:"pause_mora,omitempty"`
+	IsInterrogative *bool  `json:"is_interrogative,omitempty"`
 }
 
 // NewAccentPhrase instantiates a new AccentPhrase object
@@ -97,9 +97,9 @@ func (o *AccentPhrase) SetAccent(v int32) {
 }
 
 // GetPauseMora returns the PauseMora field value if set, zero value otherwise.
-func (o *AccentPhrase) GetPauseMora() AccentPhrasePauseMora {
+func (o *AccentPhrase) GetPauseMora() Mora {
 	if o == nil || IsNil(o.PauseMora) {
-		var ret AccentPhrasePauseMora
+		var ret Mora
 		return ret
 	}
 	return *o.PauseMora
@@ -107,7 +107,7 @@ func (o *AccentPhrase) GetPauseMora() AccentPhrasePauseMora {
 
 // GetPauseMoraOk returns a tuple with the PauseMora field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *AccentPhrase) GetPauseMoraOk() (*AccentPhrasePauseMora, bool) {
+func (o *AccentPhrase) GetPauseMoraOk() (*Mora, bool) {
 	if o == nil || IsNil(o.PauseMora) {
 		return nil, false
 	}
@@ -123,8 +123,8 @@ func (o *AccentPhrase) HasPauseMora() bool {
 	return false
 }
 
-// SetPauseMora gets a reference to the given AccentPhrasePauseMora and assigns it to the PauseMora field.
-func (o *AccentPhrase) SetPauseMora(v AccentPhrasePauseMora) {
+// SetPauseMora gets a reference to the given Mora and assigns it to the PauseMora field.
+func (o *AccentPhrase) SetPauseMora(v Mora) {
 	o.PauseMora = &v
 }
 

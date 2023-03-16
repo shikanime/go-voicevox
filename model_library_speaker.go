@@ -19,15 +19,15 @@ var _ MappedNullable = &LibrarySpeaker{}
 
 // LibrarySpeaker 音声ライブラリに含まれる話者の情報
 type LibrarySpeaker struct {
-	Speaker     LibrarySpeakerSpeaker     `json:"speaker"`
-	SpeakerInfo LibrarySpeakerSpeakerInfo `json:"speaker_info"`
+	Speaker     Speaker     `json:"speaker"`
+	SpeakerInfo SpeakerInfo `json:"speaker_info"`
 }
 
 // NewLibrarySpeaker instantiates a new LibrarySpeaker object
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewLibrarySpeaker(speaker LibrarySpeakerSpeaker, speakerInfo LibrarySpeakerSpeakerInfo) *LibrarySpeaker {
+func NewLibrarySpeaker(speaker Speaker, speakerInfo SpeakerInfo) *LibrarySpeaker {
 	this := LibrarySpeaker{}
 	this.Speaker = speaker
 	this.SpeakerInfo = speakerInfo
@@ -43,9 +43,9 @@ func NewLibrarySpeakerWithDefaults() *LibrarySpeaker {
 }
 
 // GetSpeaker returns the Speaker field value
-func (o *LibrarySpeaker) GetSpeaker() LibrarySpeakerSpeaker {
+func (o *LibrarySpeaker) GetSpeaker() Speaker {
 	if o == nil {
-		var ret LibrarySpeakerSpeaker
+		var ret Speaker
 		return ret
 	}
 
@@ -54,7 +54,7 @@ func (o *LibrarySpeaker) GetSpeaker() LibrarySpeakerSpeaker {
 
 // GetSpeakerOk returns a tuple with the Speaker field value
 // and a boolean to check if the value has been set.
-func (o *LibrarySpeaker) GetSpeakerOk() (*LibrarySpeakerSpeaker, bool) {
+func (o *LibrarySpeaker) GetSpeakerOk() (*Speaker, bool) {
 	if o == nil {
 		return nil, false
 	}
@@ -62,14 +62,14 @@ func (o *LibrarySpeaker) GetSpeakerOk() (*LibrarySpeakerSpeaker, bool) {
 }
 
 // SetSpeaker sets field value
-func (o *LibrarySpeaker) SetSpeaker(v LibrarySpeakerSpeaker) {
+func (o *LibrarySpeaker) SetSpeaker(v Speaker) {
 	o.Speaker = v
 }
 
 // GetSpeakerInfo returns the SpeakerInfo field value
-func (o *LibrarySpeaker) GetSpeakerInfo() LibrarySpeakerSpeakerInfo {
+func (o *LibrarySpeaker) GetSpeakerInfo() SpeakerInfo {
 	if o == nil {
-		var ret LibrarySpeakerSpeakerInfo
+		var ret SpeakerInfo
 		return ret
 	}
 
@@ -78,7 +78,7 @@ func (o *LibrarySpeaker) GetSpeakerInfo() LibrarySpeakerSpeakerInfo {
 
 // GetSpeakerInfoOk returns a tuple with the SpeakerInfo field value
 // and a boolean to check if the value has been set.
-func (o *LibrarySpeaker) GetSpeakerInfoOk() (*LibrarySpeakerSpeakerInfo, bool) {
+func (o *LibrarySpeaker) GetSpeakerInfoOk() (*SpeakerInfo, bool) {
 	if o == nil {
 		return nil, false
 	}
@@ -86,7 +86,7 @@ func (o *LibrarySpeaker) GetSpeakerInfoOk() (*LibrarySpeakerSpeakerInfo, bool) {
 }
 
 // SetSpeakerInfo sets field value
-func (o *LibrarySpeaker) SetSpeakerInfo(v LibrarySpeakerSpeakerInfo) {
+func (o *LibrarySpeaker) SetSpeakerInfo(v SpeakerInfo) {
 	o.SpeakerInfo = v
 }
 

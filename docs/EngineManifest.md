@@ -14,13 +14,13 @@ Name | Type | Description | Notes
 **TermsOfService** | **string** |  | 
 **UpdateInfos** | [**[]UpdateInfo**](UpdateInfo.md) |  | 
 **DependencyLicenses** | [**[]LicenseInfo**](LicenseInfo.md) |  | 
-**SupportedFeatures** | [**EngineManifestSupportedFeatures**](EngineManifestSupportedFeatures.md) |  | 
+**SupportedFeatures** | [**SupportedFeatures**](SupportedFeatures.md) |  | 
 
 ## Methods
 
 ### NewEngineManifest
 
-`func NewEngineManifest(manifestVersion string, name string, brandName string, uuid string, url string, icon string, defaultSamplingRate int32, termsOfService string, updateInfos []UpdateInfo, dependencyLicenses []LicenseInfo, supportedFeatures EngineManifestSupportedFeatures, ) *EngineManifest`
+`func NewEngineManifest(manifestVersion string, name string, brandName string, uuid string, url string, icon string, defaultSamplingRate int32, termsOfService string, updateInfos []UpdateInfo, dependencyLicenses []LicenseInfo, supportedFeatures SupportedFeatures, ) *EngineManifest`
 
 NewEngineManifest instantiates a new EngineManifest object
 This constructor will assign default values to properties that have it defined,
@@ -237,20 +237,20 @@ SetDependencyLicenses sets DependencyLicenses field to given value.
 
 ### GetSupportedFeatures
 
-`func (o *EngineManifest) GetSupportedFeatures() EngineManifestSupportedFeatures`
+`func (o *EngineManifest) GetSupportedFeatures() SupportedFeatures`
 
 GetSupportedFeatures returns the SupportedFeatures field if non-nil, zero value otherwise.
 
 ### GetSupportedFeaturesOk
 
-`func (o *EngineManifest) GetSupportedFeaturesOk() (*EngineManifestSupportedFeatures, bool)`
+`func (o *EngineManifest) GetSupportedFeaturesOk() (*SupportedFeatures, bool)`
 
 GetSupportedFeaturesOk returns a tuple with the SupportedFeatures field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSupportedFeatures
 
-`func (o *EngineManifest) SetSupportedFeatures(v EngineManifestSupportedFeatures)`
+`func (o *EngineManifest) SetSupportedFeatures(v SupportedFeatures)`
 
 SetSupportedFeatures sets SupportedFeatures field to given value.
 

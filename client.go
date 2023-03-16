@@ -48,7 +48,19 @@ type APIClient struct {
 
 	// API Services
 
-	DefaultApi *DefaultApiService
+	AudioLibraryManagementApi AudioLibraryManagementApi
+
+	OtherApi OtherApi
+
+	QueryCreationApi QueryCreationApi
+
+	QueryEditApi QueryEditApi
+
+	SettingApi SettingApi
+
+	SpeechSynthesisApi SpeechSynthesisApi
+
+	UserDictionaryApi UserDictionaryApi
 }
 
 type service struct {
@@ -67,7 +79,13 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	c.common.client = c
 
 	// API Services
-	c.DefaultApi = (*DefaultApiService)(&c.common)
+	c.AudioLibraryManagementApi = (*AudioLibraryManagementApiService)(&c.common)
+	c.OtherApi = (*OtherApiService)(&c.common)
+	c.QueryCreationApi = (*QueryCreationApiService)(&c.common)
+	c.QueryEditApi = (*QueryEditApiService)(&c.common)
+	c.SettingApi = (*SettingApiService)(&c.common)
+	c.SpeechSynthesisApi = (*SpeechSynthesisApiService)(&c.common)
+	c.UserDictionaryApi = (*UserDictionaryApiService)(&c.common)
 
 	return c
 }

@@ -20,11 +20,11 @@ type WordTypes string
 
 // List of WordTypes
 const (
-	PROPER_NOUN WordTypes = "PROPER_NOUN"
-	COMMON_NOUN WordTypes = "COMMON_NOUN"
-	VERB        WordTypes = "VERB"
-	ADJECTIVE   WordTypes = "ADJECTIVE"
-	SUFFIX      WordTypes = "SUFFIX"
+	WORDTYPES_PROPER_NOUN WordTypes = "PROPER_NOUN"
+	WORDTYPES_COMMON_NOUN WordTypes = "COMMON_NOUN"
+	WORDTYPES_VERB        WordTypes = "VERB"
+	WORDTYPES_ADJECTIVE   WordTypes = "ADJECTIVE"
+	WORDTYPES_SUFFIX      WordTypes = "SUFFIX"
 )
 
 // All allowed values of WordTypes enum

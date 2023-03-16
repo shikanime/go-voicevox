@@ -20,9 +20,9 @@ type SpeakerSupportPermittedSynthesisMorphing string
 
 // List of SpeakerSupportPermittedSynthesisMorphing
 const (
-	ALL       SpeakerSupportPermittedSynthesisMorphing = "ALL"
-	SELF_ONLY SpeakerSupportPermittedSynthesisMorphing = "SELF_ONLY"
-	NOTHING   SpeakerSupportPermittedSynthesisMorphing = "NOTHING"
+	SPEAKERSUPPORTPERMITTEDSYNTHESISMORPHING_ALL       SpeakerSupportPermittedSynthesisMorphing = "ALL"
+	SPEAKERSUPPORTPERMITTEDSYNTHESISMORPHING_SELF_ONLY SpeakerSupportPermittedSynthesisMorphing = "SELF_ONLY"
+	SPEAKERSUPPORTPERMITTEDSYNTHESISMORPHING_NOTHING   SpeakerSupportPermittedSynthesisMorphing = "NOTHING"
 )
 
 // All allowed values of SpeakerSupportPermittedSynthesisMorphing enum

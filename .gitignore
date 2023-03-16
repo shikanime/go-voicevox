@@ -22,3 +22,11 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+# Devenv
+.devenv*
+devenv.local.nix
+.pre-commit-config.yaml
+
+# Direnv
+.direnv

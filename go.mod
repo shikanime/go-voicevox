@@ -1,4 +1,4 @@
-module github.com/infinity-blackhole/go-voicevox
+module github.com/shikanime/go-voicevox
 
 go 1.18
 

@@ -22,7 +22,7 @@ go get golang.org/x/net/context
 Put the package under your project folder and add the following in import:
 
 ```golang
-import voicevox "github.com/infinity-blackhole/go-voicevox"
+import voicevox "github.com/shikanime/go-voicevox"
 ```
 
 To use a proxy, set the environment variable `HTTP_PROXY`:

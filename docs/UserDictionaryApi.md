@@ -25,13 +25,13 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    surface := "surface_example" // string | 
-    pronunciation := "pronunciation_example" // string | 
-    accentType := int32(56) // int32 | 
+    surface := "surface_example" // string |
+    pronunciation := "pronunciation_example" // string |
+    accentType := int32(56) // int32 |
     wordType := openapiclient.WordTypes("PROPER_NOUN") // WordTypes |  (optional)
     priority := int32(56) // int32 |  (optional)
 
@@ -93,11 +93,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    wordUuid := "wordUuid_example" // string | 
+    wordUuid := "wordUuid_example" // string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -155,7 +155,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
@@ -212,12 +212,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    override := true // bool | 
-    requestBody := map[string]UserDictWord{"key": *openapiclient.NewUserDictWord("Surface_example", int32(123), "PartOfSpeech_example", "PartOfSpeechDetail1_example", "PartOfSpeechDetail2_example", "PartOfSpeechDetail3_example", "InflectionalType_example", "InflectionalForm_example", "Stem_example", "Yomi_example", "Pronunciation_example", int32(123), "AccentAssociativeRule_example")} // map[string]UserDictWord | 
+    override := true // bool |
+    requestBody := map[string]UserDictWord{"key": *openapiclient.NewUserDictWord("Surface_example", int32(123), "PartOfSpeech_example", "PartOfSpeechDetail1_example", "PartOfSpeechDetail2_example", "PartOfSpeechDetail3_example", "InflectionalType_example", "InflectionalForm_example", "Stem_example", "Yomi_example", "Pronunciation_example", int32(123), "AccentAssociativeRule_example")} // map[string]UserDictWord |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -272,14 +272,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    wordUuid := "wordUuid_example" // string | 
-    surface := "surface_example" // string | 
-    pronunciation := "pronunciation_example" // string | 
-    accentType := int32(56) // int32 | 
+    wordUuid := "wordUuid_example" // string |
+    surface := "surface_example" // string |
+    pronunciation := "pronunciation_example" // string |
+    accentType := int32(56) // int32 |
     wordType := openapiclient.WordTypes("PROPER_NOUN") // WordTypes |  (optional)
     priority := int32(56) // int32 |  (optional)
 

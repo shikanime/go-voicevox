@@ -22,7 +22,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
@@ -79,7 +79,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {

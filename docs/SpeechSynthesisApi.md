@@ -25,12 +25,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    speaker := int32(56) // int32 | 
-    audioQuery := *openapiclient.NewAudioQuery([]openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))}, float32(123), float32(123), float32(123), float32(123), float32(123), float32(123), int32(123), false) // AudioQuery | 
+    speaker := int32(56) // int32 |
+    audioQuery := *openapiclient.NewAudioQuery([]openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))}, float32(123), float32(123), float32(123), float32(123), float32(123), float32(123), int32(123), false) // AudioQuery |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -89,11 +89,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    requestBody := []int32{int32(123)} // []int32 | 
+    requestBody := []int32{int32(123)} // []int32 |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -151,12 +151,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    speaker := int32(56) // int32 | 
-    audioQuery := []openapiclient.AudioQuery{*openapiclient.NewAudioQuery([]openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))}, float32(123), float32(123), float32(123), float32(123), float32(123), float32(123), int32(123), false)} // []AudioQuery | 
+    speaker := int32(56) // int32 |
+    audioQuery := []openapiclient.AudioQuery{*openapiclient.NewAudioQuery([]openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))}, float32(123), float32(123), float32(123), float32(123), float32(123), float32(123), int32(123), false)} // []AudioQuery |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -215,14 +215,14 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    baseSpeaker := int32(56) // int32 | 
-    targetSpeaker := int32(56) // int32 | 
-    morphRate := float32(8.14) // float32 | 
-    audioQuery := *openapiclient.NewAudioQuery([]openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))}, float32(123), float32(123), float32(123), float32(123), float32(123), float32(123), int32(123), false) // AudioQuery | 
+    baseSpeaker := int32(56) // int32 |
+    targetSpeaker := int32(56) // int32 |
+    morphRate := float32(8.14) // float32 |
+    audioQuery := *openapiclient.NewAudioQuery([]openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))}, float32(123), float32(123), float32(123), float32(123), float32(123), float32(123), int32(123), false) // AudioQuery |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -283,12 +283,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    speaker := int32(56) // int32 | 
-    audioQuery := *openapiclient.NewAudioQuery([]openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))}, float32(123), float32(123), float32(123), float32(123), float32(123), float32(123), int32(123), false) // AudioQuery | 
+    speaker := int32(56) // int32 |
+    audioQuery := *openapiclient.NewAudioQuery([]openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))}, float32(123), float32(123), float32(123), float32(123), float32(123), float32(123), int32(123), false) // AudioQuery |
     enableInterrogativeUpspeak := true // bool | 疑問系のテキストが与えられたら語尾を自動調整する (optional) (default to true)
     coreVersion := "coreVersion_example" // string |  (optional)
 

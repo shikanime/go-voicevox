@@ -22,12 +22,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    text := "text_example" // string | 
-    speaker := int32(56) // int32 | 
+    text := "text_example" // string |
+    speaker := int32(56) // int32 |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -86,12 +86,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    text := "text_example" // string | 
-    presetId := int32(56) // int32 | 
+    text := "text_example" // string |
+    presetId := int32(56) // int32 |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()

@@ -33,11 +33,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    preset := *openapiclient.NewPreset(int32(123), "Name_example", "SpeakerUuid_example", int32(123), float32(123), float32(123), float32(123), float32(123), float32(123), float32(123)) // Preset | 
+    preset := *openapiclient.NewPreset(int32(123), "Name_example", "SpeakerUuid_example", int32(123), float32(123), float32(123), float32(123), float32(123), float32(123), float32(123)) // Preset |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -93,11 +93,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    requestBody := []string{"Property_example"} // []string | 
+    requestBody := []string{"Property_example"} // []string |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -153,7 +153,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
@@ -210,11 +210,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    id := int32(56) // int32 | 
+    id := int32(56) // int32 |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -268,7 +268,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
@@ -325,7 +325,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
@@ -382,11 +382,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    speaker := int32(56) // int32 | 
+    speaker := int32(56) // int32 |
     skipReinit := true // bool | 既に初期化済みの話者の再初期化をスキップするかどうか (optional) (default to false)
     coreVersion := "coreVersion_example" // string |  (optional)
 
@@ -444,11 +444,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    speaker := int32(56) // int32 | 
+    speaker := int32(56) // int32 |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -506,11 +506,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    speakerUuid := "speakerUuid_example" // string | 
+    speakerUuid := "speakerUuid_example" // string |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -568,7 +568,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
@@ -628,7 +628,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
@@ -688,11 +688,11 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    preset := *openapiclient.NewPreset(int32(123), "Name_example", "SpeakerUuid_example", int32(123), float32(123), float32(123), float32(123), float32(123), float32(123), float32(123)) // Preset | 
+    preset := *openapiclient.NewPreset(int32(123), "Name_example", "SpeakerUuid_example", int32(123), float32(123), float32(123), float32(123), float32(123), float32(123), float32(123)) // Preset |
 
     configuration := openapiclient.NewConfiguration()
     apiClient := openapiclient.NewAPIClient(configuration)
@@ -748,7 +748,7 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {

@@ -24,12 +24,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    text := "text_example" // string | 
-    speaker := int32(56) // int32 | 
+    text := "text_example" // string |
+    speaker := int32(56) // int32 |
     isKana := true // bool |  (optional) (default to false)
     coreVersion := "coreVersion_example" // string |  (optional)
 
@@ -90,12 +90,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    speaker := int32(56) // int32 | 
-    accentPhrase := []openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))} // []AccentPhrase | 
+    speaker := int32(56) // int32 |
+    accentPhrase := []openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))} // []AccentPhrase |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -154,12 +154,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    speaker := int32(56) // int32 | 
-    accentPhrase := []openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))} // []AccentPhrase | 
+    speaker := int32(56) // int32 |
+    accentPhrase := []openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))} // []AccentPhrase |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
@@ -218,12 +218,12 @@ import (
     "context"
     "fmt"
     "os"
-    openapiclient "github.com/infinity-blackhole/go-voicevox"
+    openapiclient "github.com/shikanime/go-voicevox"
 )
 
 func main() {
-    speaker := int32(56) // int32 | 
-    accentPhrase := []openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))} // []AccentPhrase | 
+    speaker := int32(56) // int32 |
+    accentPhrase := []openapiclient.AccentPhrase{*openapiclient.NewAccentPhrase([]openapiclient.Mora{*openapiclient.NewMora("Text_example", "Vowel_example", float32(123), float32(123))}, int32(123))} // []AccentPhrase |
     coreVersion := "coreVersion_example" // string |  (optional)
 
     configuration := openapiclient.NewConfiguration()
